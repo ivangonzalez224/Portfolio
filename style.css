@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+  max-width: 768px;
+  background: #1c1a19;
+}
+
+/* nav container */
+
+.navContainer {
+  background: #3e3c3c;
+  height: 48px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .logo {
+  font-family: $'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1em;
+  margin: 6.4% 3.2% 6.4% 3.2%;
+  color: #fff;
+}
+
+nav .navMenu {
+  margin: 6.4% 3.2% 6.4% 3.2%;
+}
+
+.navItems {
+  opacity: 0;
+}
+
+.navItems li {
+  list-style: none;
+  margin-right: 30%;
+}
+
+.navMenu li {
+  list-style: none;
+}
+
+.navItems li:nth-last-of-type(1) {
+  margin: 6.4% 3.2% 6.4% 3.2%;
+}
+
+.headlineSocial a {
+  padding: 2.13%;
+}
+
+.navItems li a {
+  font-family: $'Inter';
+  font-size: 0.95em;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* headline container */
+
+.headline-container {
+  background: #1c1a19;
+  display: flex;
+  align-items: center;
+  padding: 32% 6.4%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: $'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #f55800;
+}
+
+header span {
+  font-family: $'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+header p {
+  font-family: $'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+/* Social icons */
+
+.headlineSocial {
+  display: flex;
+  align-items: center;
+}
+
+header .headlineImage img {
+  position: absolute;
+  top: 60.5%;
+  left: 70%;
+}
+
+header .headlineImage img:hover {
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+}
+
+/* message and menu buttons */
+
+.navBtnMessage {
+  display: flex;
+  position: relative;
+}
+
+.navBtnMessage .messageBtn {
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.navBtnMessage.active .messageBtn {
+  pointer-events: none;
+}
+
+.navBtnMessage .menuBtn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navBtnMessage.active .menuBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
