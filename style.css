@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +9,11 @@ body {
 }
 
 /* nav container */
+
+header {
+  background: #3e3c3c;
+  height: 48px;
+}
 
 .navContainer {
   background: #3e3c3c;
@@ -25,7 +32,7 @@ nav ul {
 }
 
 nav .logo {
-  font-family: $'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -60,7 +67,7 @@ nav .navMenu {
 }
 
 .navItems li a {
-  font-family: $'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 0.95em;
   color: #fff;
   text-decoration: none;
@@ -68,21 +75,21 @@ nav .navMenu {
 
 /* headline container */
 
-.headline-container {
+section {
   background: #1c1a19;
   display: flex;
   align-items: center;
   padding: 32% 6.4%;
 }
 
-header {
+.mainHeadline {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header h1 {
-  font-family: $'Crete Round';
+.mainHeadline h1 {
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -91,8 +98,8 @@ header h1 {
   color: #f55800;
 }
 
-header span {
-  font-family: $'Roboto';
+.mainHeadline span {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -102,8 +109,8 @@ header span {
   color: #fff;
 }
 
-header p {
-  font-family: $'Poppins';
+.mainHeadline p {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -118,13 +125,13 @@ header p {
   align-items: center;
 }
 
-header .headlineImage img {
+.mainHeadline .headlineImage img {
   position: absolute;
   top: 60.5%;
   left: 70%;
 }
 
-header .headlineImage img:hover {
+.mainHeadline .headlineImage img:hover {
   transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
 }
 
