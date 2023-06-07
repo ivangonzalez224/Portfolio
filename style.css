@@ -294,6 +294,17 @@ form ul {
   list-style: none;
 }
 
+.bottomNav ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  margin-top: 28.8%;
+  margin-bottom: 14.33%;
+}
+
 .worksLanguages ul {
   display: flex;
   flex-direction: row;
@@ -507,11 +518,4 @@ footer {
   justify-content: center;
   background-color: #fff;
   border-top: 1px solid #212121;
-}
-
-.bottomNav {
-  display: flex;
-  align-items: center;
-  margin-top: 28.8%;
-  margin-bottom: 14.33%;
 }
