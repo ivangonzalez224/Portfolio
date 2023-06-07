@@ -418,3 +418,18 @@ li .catTitle span {
   text-decoration: none;
   list-style: none;
 }
+
+.button {
+  text-align: center;
+}
+
+button {
+  background-color: #ff6b00;
+  padding: 3.2%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+}
