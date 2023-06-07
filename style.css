@@ -49,11 +49,6 @@ nav .navMenu {
   opacity: 0;
 }
 
-form li {
-  width: 100%;
-  margin-bottom: 10.66%;
-}
-
 .navItems li {
   list-style: none;
   margin-right: 30%;
@@ -118,17 +113,6 @@ section {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #f55800;
-}
-
-form span {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-  margin-bottom: 31.73%;
 }
 
 .mainHeadline span {
@@ -278,16 +262,6 @@ form span {
 
 .worksCard_2 {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/placeholderCard2.png");
-}
-
-form ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  gap: 24px;
-  justify-content: center;
-  list-style: none;
 }
 
 .worksLanguages ul {
@@ -443,58 +417,4 @@ li .catTitle span {
   color: #fff;
   text-decoration: none;
   list-style: none;
-}
-
-/** form section */
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 18.4% 6.4%;
-  background-color: #fff;
-}
-
-form li input {
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  padding: 3.73%;
-  box-sizing: border-box;
-  color: #979493;
-}
-
-form li textarea {
-  font-family: 'Inter', sans-serif;
-  font-style: italic;
-  border: none;
-  background-color: #fbf8f7;
-  width: 100%;
-  height: 30.4%;
-  padding: 3.2%;
-  box-sizing: border-box;
-}
-
-input:focus,
-textarea:focus {
-  outline: 1px solid #979493;
-}
-
-.button {
-  text-align: center;
-}
-
-button {
-  background-color: #ff6b00;
-  padding: 3.2%;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  border: none;
 }
