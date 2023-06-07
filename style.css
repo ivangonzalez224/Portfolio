@@ -88,6 +88,10 @@ form li {
   padding: 2.13%;
 }
 
+.bottomNav a {
+  padding: 2.13%;
+}
+
 .navItems li a {
   font-family: 'Inter', sans-serif;
   font-size: 0.95em;
@@ -495,4 +499,19 @@ button {
   font-size: 17px;
   color: #fff;
   border: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-top: 1px solid #212121;
+}
+
+.bottomNav {
+  display: flex;
+  align-items: center;
+  margin-top: 28.8%;
+  margin-bottom: 14.33%;
 }
