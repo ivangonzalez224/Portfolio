@@ -338,6 +338,12 @@ form ul {
   font-size: 17px;
   color: #fff;
   text-decoration: none;
+  transform-origin: center;
+  transition: background-color 2s;
+}
+
+.worksCard a:hover {
+  background-color: #bbb;
 }
 
 .worksBtnSee_2 {
