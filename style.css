@@ -52,12 +52,14 @@ nav .logo:hover {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
-  } 
+  }
 }
 
 nav .navMenu {
@@ -88,6 +90,7 @@ form li {
   align-items: center;
   padding: 2.66% 3.2%;
   border: 1px solid #8993a4;
+  transition: border-width 1s;
 }
 
 .languagesItems_2 li {
@@ -342,10 +345,6 @@ form ul {
   text-decoration: none;
 }
 
-.languagesItems li {
-  transition: border-width 1s;
-}
-
 .languagesItems li:hover {
   border-width: 5px;
 }
@@ -369,6 +368,16 @@ form ul {
   transition: background-color 2s;
 }
 
+.worksBottom li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .worksCard a:hover {
   background-color: #bbb;
 }
@@ -384,16 +393,6 @@ form ul {
   color: #fff;
   text-decoration: none;
   text-align: center;
-}
-
-.worksBottom li a {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  text-decoration: none;
 }
 
 /* About container */
