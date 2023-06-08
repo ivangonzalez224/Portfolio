@@ -39,6 +39,25 @@ nav .logo {
   line-height: 1em;
   margin: 6.4% 3.2% 6.4% 3.2%;
   color: #fff;
+  transform-origin: center;
+  animation: pulse 1s infinite;
+}
+
+nav .logo:hover {
+  color: #f55800;
+  border-radius: 20%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  } 
 }
 
 nav .navMenu {
