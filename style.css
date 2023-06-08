@@ -39,6 +39,27 @@ nav .logo {
   line-height: 1em;
   margin: 6.4% 3.2% 6.4% 3.2%;
   color: #fff;
+  transform-origin: center;
+  animation: pulse 1s infinite;
+}
+
+nav .logo:hover {
+  color: #f55800;
+  border-radius: 20%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 nav .navMenu {
@@ -69,6 +90,7 @@ form li {
   align-items: center;
   padding: 2.66% 3.2%;
   border: 1px solid #8993a4;
+  transition: border-width 1s;
 }
 
 .languagesItems_2 li {
@@ -323,6 +345,10 @@ form ul {
   text-decoration: none;
 }
 
+.languagesItems li:hover {
+  border-width: 5px;
+}
+
 .languagesItems_2 li a {
   color: #fff;
 }
@@ -338,6 +364,22 @@ form ul {
   font-size: 17px;
   color: #fff;
   text-decoration: none;
+  transform-origin: center;
+  transition: background-color 2s;
+}
+
+.worksBottom li a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.worksCard a:hover {
+  background-color: #bbb;
 }
 
 .worksBtnSee_2 {
@@ -351,16 +393,6 @@ form ul {
   color: #fff;
   text-decoration: none;
   text-align: center;
-}
-
-.worksBottom li a {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  text-decoration: none;
 }
 
 /* About container */
