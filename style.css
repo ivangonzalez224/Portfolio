@@ -342,6 +342,14 @@ form ul {
   text-decoration: none;
 }
 
+.languagesItems li {
+  transition: border-width 1s;
+}
+
+.languagesItems li:hover {
+  border-width: 5px;
+}
+
 .languagesItems_2 li a {
   color: #fff;
 }
