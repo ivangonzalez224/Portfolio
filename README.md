@@ -15,6 +15,7 @@
   - [Install](#install)
   - [Usage](#usage)
 - [👥 Authors](#authors)
+- [👥 Future Features](#futureFeatures)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -98,6 +99,14 @@ To run the project, do the following:
 - GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
 - Twitter: [@ivang2204](https://twitter.com/ivang2204)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/iván-gonzalez-robles-957491275)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Future Features <a name="futureFeatures"></a>
+
+- Implement other features using JavaScript such as adding better animations.
+- Add a section showing the companies with which I have collaborated.
+- Add a section of testimonials from people I've worked with.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
