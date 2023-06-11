@@ -12,29 +12,31 @@
         <div class='navContainer'>
             <div class="wrapper">
                 <nav>
-                    <div class="logo">
-                        Ivan
-                    </div>
-                    <ul class="navItems">
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a class="navBtnMessage" href="#">
-                                <img class="messageBtn" src="images/mail.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="nav__desktop">
+                        <div class="logo">
+                            Ivan
+                        </div>
+                        <ul class="navItems">
+                            <li>
+                                <a href="#works_section">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#about_section">About</a>
+                            </li>
+                            <li>
+                                <a href="#contact_form">Contact</a>
+                            </li>
+                            <li>
+                                <a class="navBtnMessage" href="#contact_form">
+                                    <img class="messageBtn" src="images/mail.png" alt="Contact me button">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>    
                     <ul class="navMenu">
                         <li>
                             <a class="navBtnMenu" href="#">
-                                <img class="menuBtn" src="images/menuUnion.png" alt="">
+                                <img class="menuBtn" src="images/menuUnion.png" alt="Menu icon">
                             </a>
                         </li>
                     </ul>
@@ -47,64 +49,63 @@
         <div class="wrapper">
             <div class="mainHeadline">
                 <div class="headlineContent">
-                    <h1>Hey there. I'm Ivan.</h1>
+                    <h1>Hey there. <br> I'm Ivan.</h1>
                     <span>I’m a Software Developer</span>
                     <p>I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-                    <div class="headlineSocial">
-                        <a href="https://github.com/ivangonzalez224">
-                            <img src="images/gitHub.png" alt="">
-                        </a>
-                        <a href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez-robles-957491275/">
-                            <img src="images/linkedin.png" alt="">
-                        </a>
-                        <a href="https://www.angellist.com/">
-                            <img src="images/angelist.png" alt="">
-                        </a>
-                        <a href="https://twitter.com/ivang2204">
-                            <img src="images/twitter.png" alt="">
-                        </a>
-                        <a href="https://medium.com/">
-                            <img src="images/medium.png" alt="">
-                        </a>
-                        
-                    </div>
+                </div>    
+                <div class="headlineSocial">
+                    <a href="https://github.com/ivangonzalez224">
+                        <img src="images/gitHub.png" alt="Git Hub Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez-robles-957491275/">
+                        <img src="images/linkedin.png" alt="Linkedin Icon">
+                    </a>
+                    <a href="https://www.angellist.com/">
+                        <img src="images/angelist.png" alt="Angel List Icon">
+                    </a>
+                    <a href="https://twitter.com/ivang2204">
+                        <img src="images/twitter.png" alt="Twitter Icon">
+                    </a>
+                    <a href="https://medium.com/">
+                        <img src="images/medium.png" alt="Medium Icon">
+                    </a>
                 </div>
-
-                <div class="headlineImage">
-                    <img src="images/illustration.png" alt="">
-                </div>
-            </header>
+            </div>    
         </div>
     </section>
-    <div class="works">
+    <div class="works" id="works_section">
         <div class="wrapper">
             <div class="mainWorks">
-                <h1>My Recent Works</h1>
-                <div class="workslineTop"></div>
-                <div class="worksCard">
+                <div class="works__top">
+                    <div class="works__title"><h1>My Recent Works</h1></div>
+                    <div class="workslineTop"></div>
+                </div>    
+                <div class="worksCard worksCard_1">
                     <img src="images/works1.png" alt="">
-                    <span>Multi-Post Stories</span>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                    <div class="worksLanguages">
-                        <ul class="languagesItems">
-                            <li>
-                                <a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a>
-                            </li>
-                            <li>
-                                <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
-                            </li>
-                            <li>
-                                <a href="https://getbootstrap.com/">Bootstrap</a>
-                            </li>
-                            <li>
-                                <a href="https://www.ruby-lang.org/es/">Ruby</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="worksBtnSee" href="#">See Project</a>
-                </div>
-                <div class="worksCard worksCard_2">
                     <div class="rightBlock">
+                        <span>Multi-Post Stories</span>
+                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                        <div class="worksLanguages">
+                            <ul class="languagesItems">
+                                <li>
+                                    <a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+                                </li>
+                                <li>
+                                    <a href="https://getbootstrap.com/">Bootstrap</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.ruby-lang.org/es/">Ruby</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="worksBtnSee" href="#">See Project</a>
+                    </div>    
+                </div>
+                <div class="worksCard worksCard_2 worksCard_mob">
+                    <div class="detail_project">
                         <span>Profesional Art Printing Data</span>
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
                         <div class="worksLanguages">
@@ -123,19 +124,118 @@
                     </div>    
                     <a class="worksBtnSee_2" href="#">See Project</a>
                 </div>
+                <div class="worksCard_desk">
+                    <div class="worksCard worksCard_2 worksCard_desk_1">
+                        <div class="detail_project">
+                        </div>    
+                        <a class="worksBtnSee_2 worksBtnSee_3" href="#">See Project</a>
+                    </div>
+                    <div class="worksCard worksCard_2 worksCard_desk_2">
+                        <div class="detail_project">
+                            <span>Data Dashboard Healthcare</span>
+                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                            <div class="worksLanguages">
+                                <ul class="languagesItems languagesItems_2">
+                                    <li>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ruby-lang.org/es/">Ruby</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worksCard worksCard_2 worksCard_desk_3">
+                        <div class="detail_project">
+                            <span>Website Portfolio</span>
+                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                            <div class="worksLanguages">
+                                <ul class="languagesItems languagesItems_2">
+                                    <li>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ruby-lang.org/es/">Ruby</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worksCard worksCard_2 worksCard_desk_4">
+                        <div class="detail_project">
+                            <span>Profesional Art Printing Data</span>
+                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                            <div class="worksLanguages">
+                                <ul class="languagesItems languagesItems_2">
+                                    <li>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ruby-lang.org/es/">Ruby</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worksCard worksCard_2 worksCard_desk_5">
+                        <div class="detail_project">
+                            <span>Data Dashboard Healthcare</span>
+                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                            <div class="worksLanguages">
+                                <ul class="languagesItems languagesItems_2">
+                                    <li>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ruby-lang.org/es/">Ruby</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="worksCard worksCard_2 worksCard_desk_6">
+                        <div class="detail_project">
+                            <span>Website Portfolio </span>
+                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                            <div class="worksLanguages">
+                                <ul class="languagesItems languagesItems_2">
+                                    <li>
+                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.ruby-lang.org/es/">Ruby</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>    
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about_section">
         <div class="wrapper">
             <div class="mainAbout">
                 <div class="aboutContent">
                     <h1>About me</h1>
                     <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
                     <a class="resumeBtn" href="#">Get my resume</a>
-                </div>
-                <div class="aboutImage">
-                    <img src="images/illustrationAbout.png" alt="">
                 </div>
             </div>
             <div class="separator"></div>
@@ -145,7 +245,7 @@
             <ul class="catWrapper">
                 <li>
                     <div class="catTitle">
-                        <img src="images/rectangle.png" alt="">
+                        <img src="images/rectangle.png" alt="Diamond Icon">
                         <span>Language</span>
                     </div>
                 </li>
@@ -165,7 +265,7 @@
             <ul class="catWrapper">
                 <li>
                     <div class="catTitle">
-                        <img src="images/square.png" alt="">
+                        <img src="images/square.png" alt="Square Icon">
                         <span>Frameworks</span>
                     </div>
                 </li>
@@ -185,7 +285,7 @@
             <ul class="catWrapper">
                 <li>
                     <div class="catTitle">
-                        <img src="images/circle.png" alt="">
+                        <img src="images/circle.png" alt="Circle Icon">
                         <span>Skills</span>
                     </div>
                 </li>
@@ -207,8 +307,8 @@
             </ul>
         </div>
     </div>
-    <form action="https://formspree.io/f/mdovrwgl" method="post">
-        <span>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</span>
+    <form action="https://formspree.io/f/mdovrwgl" method="post" id="contact_form">
+        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
         <ul>
           <li>
             <input type="text" aria-label="name" name="user_name" maxlength="30" placeholder="Full name" required/>
@@ -229,27 +329,27 @@
             <ul>
                 <li>
                     <a href="https://github.com/ivangonzalez224">
-                        <img src="images/gitFooter.png" alt="">
+                        <img src="images/gitFooter.png" alt="Git Hub Icon">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez-robles-957491275/">
-                        <img src="images/linkFooter.png" alt="">
+                        <img src="images/linkFooter.png" alt="Linkdin Icon">
                     </a>
                 </li>
                 <li>    
                     <a href="https://www.angellist.com/">
-                        <img src="images/angelistFooter.png" alt="">
+                        <img src="images/angelistFooter.png" alt="Angel List Icon">
                     </a>
                 </li>
                 <li>    
                     <a href="https://twitter.com/ivang2204">
-                        <img src="images/twitterFooter.png" alt="">
+                        <img src="images/twitterFooter.png" alt="Twitter Icon">
                     </a>
                 </li>
                 <li>    
                     <a href="https://medium.com/">
-                        <img src="images/mediumFooter.png" alt="">
+                        <img src="images/mediumFooter.png" alt="Medium Icon">
                     </a>
                 </li>    
             </ul>    

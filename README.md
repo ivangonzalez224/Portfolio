@@ -5,7 +5,7 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
+- [📖 About the Project](#about-project) 
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -15,6 +15,7 @@
   - [Install](#install)
   - [Usage](#usage)
 - [👥 Authors](#authors)
+- [🛩️ Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -98,6 +99,14 @@ To run the project, do the following:
 - GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
 - Twitter: [@ivang2204](https://twitter.com/ivang2204)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/iván-gonzalez-robles-957491275)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🛩️ Future Features <a name="future-features"></a>
+
+- Implement other features using JavaScript such as adding better animations.
+- Add a section showing the companies with which I have collaborated.
+- Add a section of testimonials from people I've worked with.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
