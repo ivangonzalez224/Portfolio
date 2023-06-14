@@ -541,7 +541,7 @@ form ul {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -553,7 +553,7 @@ form ul {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   text-align: center;
 
@@ -620,7 +620,7 @@ form ul {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   margin-bottom: 33.28%;
   transition: padding 1s;
@@ -754,17 +754,21 @@ button {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #fff;
+  color: #000;
   border: none;
   transition: padding 1s, color 1s, background-color 1s;
 }
 
+.worksBtnSee:focus-within,
+.worksBtnSee_2:focus-within,
+button:focus-within,
+.resumeBtn:focus-within,
 .worksBtnSee:hover,
 .worksBtnSee_2:hover,
 button:hover,
 .resumeBtn:hover {
   padding: 5%;
-  color: #ff6b00;
+  color: #000;
   background-color: #fef5e1;
   border: 1px solid #ff6b00;
 }
