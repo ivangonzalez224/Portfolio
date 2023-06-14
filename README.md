@@ -9,6 +9,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -50,9 +51,17 @@ In this project we use HTML & CSS and flexbox in order to lay out the elements o
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+ The link to the project deployed:
+
+- [Live Demo Link](https://ivangonzalez224.github.io/portfolio.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project we use flexbox to build a responsive personal portfolio for mobile website.
+In this project we use flexbox to build a responsive personal portfolio for mobile and desktop website.
 
 ### Setup
 
@@ -62,7 +71,7 @@ Clone this repository to your desired folder:
 
   ```sh
   cd my-folder
-  git clone https://github.com/ivangonzalez224/Portfolio-mobile-first.git
+  git clone https://github.com/ivangonzalez224/portfolio.io.git
   code . (To open in Vscode)
 ```
 
