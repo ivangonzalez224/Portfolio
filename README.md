@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Portfolio: setup and mobile first <a name="about-project"></a>
+# 📖 Portfolio: mobile first <a name="about-project"></a>
 
-**Portfolio: setup and mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use Flexbox and Grid in order to place elemnets ina web page, and to use media queries in order to build responsive web pages.
+**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use Flexbox and Grid in order to place elements in a web page, and to use media queries in order to build responsive web pages.
 
 ## 🛠 Built With <a name="built-with"></a>
 
