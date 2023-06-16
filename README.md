@@ -24,7 +24,7 @@
 
 # 📖 Portfolio: setup and mobile first <a name="about-project"></a>
 
-**Portfolio: setup and mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, and to use Flexbox.
+**Portfolio: setup and mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use Flexbox and Grid in order to place elemnets ina web page, and to use media queries in order to build responsive web pages.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -34,7 +34,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project we use HTML & CSS and flexbox in order to lay out the elements on the page to build a mobile webside.
+In this project we use HTML & CSS in order to lay out the elements on the page to build a mobile first website.
 <details>
   <summary>Client</summary>
   <ul>
@@ -45,9 +45,10 @@ In this project we use HTML & CSS and flexbox in order to lay out the elements o
 
 ### Key Features <a name="key-features"></a>
 
-- Add a professional README.md file
-- Use flexbox in order to lay out the elements on the page
-- Set up a linter for the project
+- Add a professional README.md file.
+- Use flexbox and grid in order to lay out the elements on the page.
+- Use media queries in order to build a responsive web site.
+- Set up a linter for the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +62,7 @@ In this project we use HTML & CSS and flexbox in order to lay out the elements o
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project we use flexbox to build a responsive personal portfolio for mobile and desktop website.
+In this project we use media queries to build a responsive personal portfolio for mobile and desktop website.
 
 ### Setup
 
