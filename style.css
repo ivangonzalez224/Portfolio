@@ -76,7 +76,10 @@ nav .logo {
 .active {
   display:none;
 }
-
+.nav__btn_mobile_closed span{
+  font-weight: 200;
+  font-size: 30px;
+}
 .nav__mobile_menu li a {
   color: #FFF5E1;
   font-family: 'Inter', sans-serif;
