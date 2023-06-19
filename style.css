@@ -64,31 +64,30 @@ nav .logo {
   animation-duration: 2.5s;
 }
 /* close button menu */
-.nav__mobile_menu{
+.nav__mobile_menu {
   min-height: 100vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
   line-height:44px;
   padding: 12% 6.4%;
 
 }
-.active{
+.active {
   display:none;
 }
-.nav__mobile_menu li a{
+
+.nav__mobile_menu li a {
   color: #FFF5E1;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   text-decoration: none;
   font-size:32px;
 }
-.nav__btn_mobile_closed{
+.nav__btn_mobile_closed {
   position: absolute;
-  top:12px;
-  right: 12px;
-  
- 
+  top: 12px;
+  right: 48px;
 }
 .nav_btn_list{
   padding-bottom:2%;
