@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;700&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
 
 body {
   margin: 0;
@@ -63,6 +63,40 @@ nav .logo {
   animation-name: fadeInOut;
   animation-duration: 2.5s;
 }
+/* close button menu */
+.nav__mobile_menu{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  line-height:44px;
+  padding: 12% 6.4%;
+
+}
+.active{
+  display:none;
+}
+.nav__mobile_menu li a{
+  color: #FFF5E1;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size:32px;
+}
+.nav__btn_mobile_closed{
+  position: absolute;
+  top:12px;
+  right: 12px;
+  
+ 
+}
+.nav_btn_list{
+  padding-bottom:2%;
+  border-bottom: 1px solid #FFF5E1;
+  margin-bottom:6%;
+}
+
+
 
 @keyframes fadeInOut {
   from {
