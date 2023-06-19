@@ -63,42 +63,50 @@ nav .logo {
   animation-name: fadeInOut;
   animation-duration: 2.5s;
 }
+
 /* close button menu */
+
 .nav__mobile_menu {
   min-height: 100vh;
   display: none;
   flex-direction: column;
   list-style: none;
-  line-height:44px;
+  line-height: 44px;
   padding: 12% 6.4%;
+}
 
-}
-.active {
-  display:none;
-}
-.nav__btn_mobile_closed span{
+.nav__btn_mobile_closed span {
   font-weight: 200;
   font-size: 30px;
 }
+
+.headlineSocial a {
+  padding: 2.13%;
+}
+
+.bottomNav a {
+  padding: 2.13%;
+}
+
 .nav__mobile_menu li a {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   text-decoration: none;
-  font-size:32px;
+  font-size: 32px;
 }
+
 .nav__btn_mobile_closed {
   position: absolute;
   top: 12px;
   right: 48px;
 }
-.nav_btn_list{
-  padding-bottom:2%;
-  border-bottom: 1px solid #FFF5E1;
-  margin-bottom:6%;
+
+.nav_btn_list {
+  padding-bottom: 2%;
+  border-bottom: 1px solid #fff5e1;
+  margin-bottom: 6%;
 }
-
-
 
 @keyframes fadeInOut {
   from {
@@ -159,14 +167,6 @@ form li {
 
 .catWrapper li {
   list-style: none;
-}
-
-.headlineSocial a {
-  padding: 2.13%;
-}
-
-.bottomNav a {
-  padding: 2.13%;
 }
 
 .navItems li a {
@@ -733,13 +733,13 @@ form {
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  padding-left: 3.2%;
+  padding-right: 3.2%;
 
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 3.2%;
-    padding-right: 3.2%;
     padding-top: 6%;
     padding-bottom: 9.41%;
   }

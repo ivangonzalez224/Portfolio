@@ -1,13 +1,22 @@
-const menu_button = document.querySelector(".navBtnMenu");
-const mobile_menu = document.querySelector(".nav__mobile_menu");
-const nav_menu = document.querySelector(".header_bar");
-const nav__mobile_menu = document.querySelector(".nav__mobile_menu");
+const menuButton = document.querySelector('.navBtnMenu');
+const mobileMenu = document.querySelector('.nav__mobile_menu');
+const navMenu = document.querySelector('.header_bar');
+const mobileMenuOptions = document.querySelectorAll('.nav_btn_list');
+const navBtnMobileClosed = document.querySelector('.nav__btn_mobile_closed');
 
-menu_button.addEventListener("click", ()=>{
-   mobile_menu.style.display = "flex";
-   nav_menu.style.display = 'none';
+menuButton.addEventListener('click', () => {
+  mobileMenu.style.display = 'flex';
+  navMenu.style.display = 'none';
 });
-nav__mobile_menu.addEventListener("click",()=>{
-   mobile_menu.style.display = "none";
-   nav_menu.style.display = 'block';
-})
+
+for (let i = 0; i < mobileMenuOptions.length; i += 1) {
+  mobileMenuOptions[i].addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+    navMenu.style.display = 'block';
+  });
+}
+
+navBtnMobileClosed.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+  navMenu.style.display = 'block';
+});
