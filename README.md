@@ -24,22 +24,24 @@
 
 # 📖 Portfolio: mobile first <a name="about-project"></a>
 
-**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use Flexbox and Grid in order to place elements in a web page, and to use media queries in order to build responsive web pages.
+**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, and to use Flexbox.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 1. HTML
 2. CSS
-3. Linters
+3. JavaScript
+4. Linters
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project we use HTML & CSS in order to lay out the elements on the page to build a mobile first website.
+In this project we use HTML, CSS and JavaScript, flexbox and grid in order to lay out the elements on the page, and media queries to build a responsive mobile first web site.
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -47,7 +49,7 @@ In this project we use HTML & CSS in order to lay out the elements on the page t
 
 - Add a professional README.md file.
 - Use flexbox and grid in order to lay out the elements on the page.
-- Use media queries in order to build a responsive web site.
+- Use media queries in order to build a responsive web page.
 - Set up a linter for the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -62,7 +64,7 @@ In this project we use HTML & CSS in order to lay out the elements on the page t
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project we use media queries to build a responsive personal portfolio for mobile and desktop website.
+In this project we use flexbox to build a responsive personal portfolio for mobile and desktop website.
 
 ### Setup
 
