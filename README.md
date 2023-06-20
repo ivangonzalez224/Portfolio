@@ -35,7 +35,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project we use HTML & CSS in order to lay out the elements on the page to build a mobile first website.
+In this project we use HTML, CSS & JavaScript in order to lay out the elements on the page to build a mobile first website.
 
 <details>
   <summary>Client</summary>
