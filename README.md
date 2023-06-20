@@ -35,7 +35,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project we use HTML & CSS and flexbox in order to lay out the elements on the page to build a mobile webside.
+In this project we use HTML, CSS & JavaScript, flexbox and grid in order to lay out the elements on the page, and media queries in order to build a responsive mobile first web site.
 <details>
   <summary>Client</summary>
   <ul>
