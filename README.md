@@ -30,16 +30,18 @@
 
 1. HTML
 2. CSS
-3. Linters
+3. JavaScript
+4. Linters
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project we use HTML & CSS and flexbox in order to lay out the elements on the page to build a mobile webside.
+In this project we use HTML, CSS & JavaScript using flexbox and grid in order to lay out the elements, and media queries on the page in order to build a responsive mobile first website.
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -47,6 +49,7 @@ In this project we use HTML & CSS and flexbox in order to lay out the elements o
 
 - Add a professional README.md file
 - Use flexbox in order to lay out the elements on the page
+- Use media queries to build a responsive web page.
 - Set up a linter for the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -61,7 +64,7 @@ In this project we use HTML & CSS and flexbox in order to lay out the elements o
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project we use flexbox to build a responsive personal portfolio for mobile and desktop website.
+In this project we use flexbox, grid and media queries to build a responsive personal portfolio for mobile and desktop website.
 
 ### Setup
 
