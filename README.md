@@ -22,31 +22,34 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Portfolio: setup and mobile first <a name="about-project"></a>
+# 📖 Portfolio: mobile first <a name="about-project"></a>
 
-**Portfolio: setup and mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, and to use Flexbox.
+**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, and to use Flexbox.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 1. HTML
 2. CSS
-3. Linters
+3. JavaScript
+4. Linters
 
 ### Tech Stack <a name="tech-stack"></a>
 
-In this project we use HTML & CSS and flexbox in order to lay out the elements on the page to build a mobile webside.
+In this project we use HTML, CSS & JavaScript and flexbox in order to lay out the elements on the page to build a mobile website.
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
 - Add a professional README.md file
-- Use flexbox in order to lay out the elements on the page
+- Use flexbox in order to lay out the elements on the page.
+- Use media queries to build a responsive web page.
 - Set up a linter for the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -61,7 +64,7 @@ In this project we use HTML & CSS and flexbox in order to lay out the elements o
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-In this project we use flexbox to build a responsive personal portfolio for mobile and desktop website.
+In this project we use flexbox, grid and media queries to build a responsive personal portfolio for mobile and desktop website.
 
 ### Setup
 
