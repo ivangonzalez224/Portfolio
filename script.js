@@ -1,3 +1,4 @@
+//***** Mobile Menu*****/
 const menuButton = document.querySelector(".navBtnMenu");
 const mobileMenu = document.querySelector(".nav__mobile_menu");
 const navMenu = document.querySelector(".header_bar");
@@ -17,6 +18,8 @@ navBtnMobileClosed.addEventListener("click", () => {
   mobileMenu.style.display = "none";
   navMenu.style.display = "block";
 });
+//***** Mobile Menu*****/
+
 // object for Main Work card
 const cardProjectMob = {
   name: "Multi-Post Stories",
@@ -40,7 +43,7 @@ const cardProjectMob = {
   linkLive: "",
   linkSource: "",
 };
-// other card object
+// card object secondary
 const cardProjectMob2 = {
   name: "Profesional Art Printing Data",
   description:
@@ -61,14 +64,36 @@ const cardProjectMob2 = {
   linkLive: "",
   linkSource: ""
 };
+// card object Desktop
+const cardProjectDesk = {
+  name: ['','Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio'],
+  description:
+    "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry" +
+    "s standard.",
+  featureImage: ['./images/imgProject1.svg', './images/placeholderCard2.svg', './images/placeholderCard3.svg', './images/placeholderCard1.png', './images/placeholderCard2.svg', './images/placeholderCard3.svg'],
+  linkRef: [
+    "https://developer.mozilla.org/es/docs/Web/HTML",
+    "https://getbootstrap.com/",
+    "https://www.ruby-lang.org/es/",
+  ],
+  titles: [
+    "HTML definition web page",
+    "Bootstrap definition web page",
+    "Ruby definition web page",
+  ],
+  technologies: ["HTML", "Bootstrap", "Ruby"],
+  linkLive: "",
+  linkSource: ""
+};
+
 const projectsSection = document.querySelector(".works");
 const wrapperSection = document.querySelector(".wrapperProjects");
 
-//** Main Works ** //
+// Main Works //
 const mainWorks = document.createElement("div");
 mainWorks.className = "mainWorks";
 
-//***** Works Top ***** //
+// Works Top //
 const worksTop = document.createElement("div");
 worksTop.className = "works__top";
 const worksTitle = document.createElement("div");
@@ -83,9 +108,9 @@ mainWorks.appendChild(worksTop);
 worksTop.appendChild(worksTitle);
 worksTitle.appendChild(titleProjects);
 worksTop.appendChild(workslineTop);
-//***** Works Top ***** //
+// Works Top //
 
-//***** Works Card 1 ***** //
+// Works Card 1 //
 const worksCard1 = document.createElement("div");
 worksCard1.className = "worksCard worksCard_1";
 const imageCard1 = document.createElement("img");
@@ -112,7 +137,7 @@ rightBlock.appendChild(spanRightBlock);
 rightBlock.appendChild(pRightBlock);
 rightBlock.appendChild(worksLanguages);
 worksLanguages.appendChild(languagesItems);
-//***** Create technologies ***** //
+// Create technologies buttons//
 for (let i = 0; i < cardProjectMob.technologies.length; i++) {
   const langItemsList = document.createElement("li");
   const languageAnchor = document.createElement("a");
@@ -124,56 +149,85 @@ for (let i = 0; i < cardProjectMob.technologies.length; i++) {
   langItemsList.appendChild(languageAnchor);
 }
 rightBlock.appendChild(worksBtnSee);
-//***** Works Card 1 ***** //
-// created another card
-//Other card for loop
+// Works Card 1 //
+
+// create secondary cards //
 for (let i = 0; i < 6; i++) {
   const worksCardGrid = document.createElement("div");
   worksCardGrid.className = "worksCard worksCard_2 worksCard_mob";
-  mainWorks.appendChild(worksCardGrid);
   const detailProject = document.createElement("div");
   detailProject.className = "detail_project";
   const spanCardMob2 = document.createElement("span");
+  spanCardMob2.innerText = cardProjectMob2.name;
   const pCardMob2 = document.createElement("p");
+  pCardMob2.innerText = cardProjectMob2.description;
   const worksLanguages = document.createElement("div");
   worksLanguages.className = "worksLanguages";
-  const languageItemMob2 = document.createElement("ul");
-  languageItemMob2.className = "languagesItems languagesItems_2";
+  const languageItemsMob2 = document.createElement("ul");
+  languageItemsMob2.className = "languagesItems languagesItems_2";
+  mainWorks.appendChild(worksCardGrid);
   worksCardGrid.appendChild(detailProject);
   detailProject.appendChild(spanCardMob2);
   detailProject.appendChild(pCardMob2);
   detailProject.appendChild(worksLanguages);
-  worksLanguages.appendChild(languageItemMob2);
-  for (let i = 0; i < cardProjectMob2.technologies.length; i++) {
+  worksLanguages.appendChild(languageItemsMob2);
+  // Create technologies buttons for secondary cards//
+  for (let j = 0; j < cardProjectMob2.technologies.length; j++) {
     let listContentMob2 = document.createElement("li");
     let anchorContentMob2 = document.createElement("a");
-    languageItemMob2.appendChild(listContentMob2);
+    anchorContentMob2.href = cardProjectMob2.linkRef[j];
+    anchorContentMob2.innerText = cardProjectMob2.technologies[j];
+    anchorContentMob2.title = cardProjectMob2.titles[j];
+    languageItemsMob2.appendChild(listContentMob2);
     listContentMob2.appendChild(anchorContentMob2);
-    pCardMob2.innerText = cardProjectMob2.description;
-    spanCardMob2.innerText = cardProjectMob2.name;
-    anchorContentMob2 = cardProjectMob2.titles[i];
-    anchorContentMob2.href = cardProjectMob2.linkRef[i];
-    anchorContentMob2.innerText = cardProjectMob2.technologies[i];
-    anchorContentMob2.title = cardProjectMob2.titles[i];
   }
   const worksBtnSee2 = document.createElement("a");
   worksBtnSee2.className = "worksBtnSee_2";
   worksBtnSee2.innerText = 'See project';
+  worksBtnSee2.title = 'Profesional Art Printing Data project link';
   worksCardGrid.appendChild(worksBtnSee2);
 }
-//creating anchor tag
-menuButton.addEventListener("click", () => {
-  mobileMenu.style.display = "flex";
-  navMenu.style.display = "none";
-});
+const worksCardDesk = document.createElement("div");
+worksCardDesk.className = "worksCard_desk";
+mainWorks.appendChild(worksCardDesk);
 
-for (let i = 0; i < mobileMenuOptions.length; i += 1) {
-  mobileMenuOptions[i].addEventListener("click", () => {
-    mobileMenu.style.display = "none";
-    navMenu.style.display = "block";
-  });
+for (let i = 0; i < 6; i++) {
+  const worksCardDeskAux = document.createElement("div");
+  worksCardDeskAux.className = "worksCard worksCard_2 worksCard_desk_aux";
+  worksCardDeskAux.style.backgroundImage = 'url('+ cardProjectDesk.featureImage[i] +')'
+  const detailProjectDesk = document.createElement("div");
+  detailProjectDesk.className = "detail_project";
+  const spanCardDesk = document.createElement("span");
+  spanCardDesk.innerText = cardProjectDesk.name[i];
+  const pCardDesk = document.createElement("p");
+  pCardDesk.innerText = cardProjectDesk.description;
+  const worksLanguagesDesk = document.createElement("div");
+  worksLanguagesDesk.className = "worksLanguages";
+  const languageItemsDesk = document.createElement("ul");
+  languageItemsDesk.className = "languagesItems languagesItems_2";
+  worksCardDesk.appendChild(worksCardDeskAux);
+  worksCardDeskAux.appendChild(detailProjectDesk);
+  const worksBtnSee2Desk = document.createElement("a");
+  worksBtnSee2Desk.innerText = 'See project';
+  worksBtnSee2Desk.title = cardProjectDesk.name[i]+' link';
+  if(i>0){
+    detailProjectDesk.appendChild(spanCardDesk);
+    detailProjectDesk.appendChild(pCardDesk);  
+    detailProjectDesk.appendChild(worksLanguagesDesk);
+    worksLanguagesDesk.appendChild(languageItemsDesk);
+    worksBtnSee2Desk.className = 'worksBtnSee_2';
+  }else {
+    worksBtnSee2Desk.className = 'worksBtnSee_2 worksBtnSee_3';  
+  }
+  // Create technologies buttons for secondary cards//
+  for (let j = 0; j < cardProjectDesk.technologies.length; j++) {
+    let listContentDesk = document.createElement("li");
+    let anchorContentDesk = document.createElement("a");
+    anchorContentDesk.href = cardProjectDesk.linkRef[j];
+    anchorContentDesk.innerText = cardProjectDesk.technologies[j];
+    anchorContentDesk.title = cardProjectDesk.titles[j];
+    languageItemsDesk.appendChild(listContentDesk);
+    listContentDesk.appendChild(anchorContentDesk);
+  }
+  worksCardDeskAux.appendChild(worksBtnSee2Desk);
 }
-navBtnMobileClosed.addEventListener("click", () => {
-  mobileMenu.style.display = "none";
-  navMenu.style.display = "block";
-});

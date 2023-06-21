@@ -490,34 +490,20 @@ form h2 {
   color: #fff;
 }
 
-.worksCard_desk_1 {
-  background: url("./images/imgProject1.svg");
-  justify-content: flex-end;
-}
-
 .worksCard_mob {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/placeholderCard1.png");
 
   @media (min-width: 768px) {
-    height: 0;
+    display: none;
   }
 }
 
-.worksCard_desk_4 {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/placeholderCard1.png");
+.worksCard_desk_aux {
   justify-content: flex-end;
 }
 
-.worksCard_desk_2,
-.worksCard_desk_5 {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/placeholderCard2.svg");
-  justify-content: flex-end;
-}
-
-.worksCard_desk_3,
-.worksCard_desk_6 {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/placeholderCard3.svg");
-  justify-content: flex-end;
+.worksCard_desk_aux:hover .worksBtnSee_2 {
+  display: block;
 }
 
 form ul {
@@ -579,6 +565,7 @@ form ul {
   font-size: 17px;
   color: #000;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .worksBtnSee_2 {
@@ -592,6 +579,7 @@ form ul {
   color: #000;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     display: none;
@@ -803,7 +791,7 @@ button:focus-within,
 .worksBtnSee_2:hover,
 button:hover,
 .resumeBtn:hover {
-  padding: 5%;
+  padding: 3.5%;
   color: #000;
   background-color: #fef5e1;
   border: 1px solid #ff6b00;
