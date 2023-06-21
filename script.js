@@ -66,7 +66,7 @@ const cardProjectMob2 = {
 };
 // card object Desktop
 const cardProjectDesk = {
-  name: ['','Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio'],
+  name: ['Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio'],
   description:
     "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry" +
     "s standard.",
@@ -183,6 +183,7 @@ for (let i = 0; i < 6; i++) {
     listContentMob2.appendChild(anchorContentMob2);
   }
   const worksBtnSee2 = document.createElement("a");
+  worksBtnSee2.id = i;
   worksBtnSee2.className = "worksBtnSee_2";
   worksBtnSee2.innerText = 'See project';
   worksBtnSee2.title = 'Profesional Art Printing Data project link';
@@ -300,3 +301,19 @@ popupBtnsUl.appendChild(popupListGit);
 popupListGit.appendChild(popupBtnGit);
 popupListGit.appendChild(popupSourceImg);
 
+
+// closing button adding 
+document.querySelector(".poppup_btnClosed").addEventListener("click",()=>{
+  popupMain.style.display="none";
+})
+let i=0;
+let btnsPopUp = document.querySelectorAll(".worksBtnSee_2");
+btnsPopUp.forEach((button)=>{
+  button.addEventListener("click",()=>{
+    popupMain.style.display="block";
+    popupTitle.innerText = cardProjectDesk.name[i++];
+  })
+})
+worksBtnSee.addEventListener("click",()=>{
+  popupMain.style.display="block";
+})
