@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;400;700&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;400;700&family=Poppins:wght@100&family=Roboto:wght@100;700&display=swap');
 
 body {
   margin: 0;
@@ -803,4 +803,137 @@ footer {
   justify-content: center;
   background-color: #fff;
   border-top: 1px solid #212121;
+}
+
+.popup_main, .popup_div {
+  background-color: #fff;
+  margin-left: 3.2%;
+  margin-right: 3.2%;
+  padding: 3.2%;
+}
+
+.popup_divTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup_main h2{
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+} 
+
+.popup_topDiv ul {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    
+  }
+}
+
+.popup_topDiv ul li{
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #979493;
+
+
+  @media (min-width: 768px) {
+    
+  }
+}
+.popup_topDiv ul li a{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3A39;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    
+  }
+}
+
+.popup_main p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.popup_mainImg {
+  width: 100%;
+  margin-right: 3.2%;
+
+  @media (min-width: 768px) {
+    width: 59.1%;
+  }
+}
+
+.popup_contentDiv {
+ 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }    
+}
+
+.popup_contentDiv ul {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+}
+
+.popup_contentDiv ul li{
+  display: flex;
+  padding: 12px;
+  gap: 12px;
+  background-color: #FF6B00;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    
+  }
+}
+
+.popup_contentDiv ul li a{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+
+  @media (min-width: 768px) {
+    
+  }
+}
+
+.popup_contentDiv ul li:focus-within,
+.popup_contentDiv ul li:hover {
+  padding: 1.5%;
+  background-color: #fef5e1;
+  border: 1px solid #ff6b00;
+}
+
+.popup_contentRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
 }

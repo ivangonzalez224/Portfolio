@@ -88,6 +88,7 @@ const cardProjectDesk = {
 
 const projectsSection = document.querySelector(".works");
 const wrapperSection = document.querySelector(".wrapperProjects");
+const popupMain = document.querySelector(".popup_main");
 
 // Main Works //
 const mainWorks = document.createElement("div");
@@ -219,7 +220,7 @@ for (let i = 0; i < 6; i++) {
   }else {
     worksBtnSee2Desk.className = 'worksBtnSee_2 worksBtnSee_3';  
   }
-  // Create technologies buttons for secondary cards//
+  // Create technologies buttons for secondary cards //
   for (let j = 0; j < cardProjectDesk.technologies.length; j++) {
     let listContentDesk = document.createElement("li");
     let anchorContentDesk = document.createElement("a");
@@ -231,3 +232,71 @@ for (let i = 0; i < 6; i++) {
   }
   worksCardDeskAux.appendChild(worksBtnSee2Desk);
 }
+// Create popup window //
+let popupDiv = document.createElement("div");
+popupDiv.className = 'popup_div';
+let popupTopDiv = document.createElement("div");
+popupDiv.className = 'popup_topDiv';
+let popuptitleDiv = document.createElement("div");
+popuptitleDiv.className = 'popup_divTitle';
+let popupTitle = document.createElement('h2');
+popupTitle.innerText = cardProjectDesk.name[1];
+let popupBtnClosed = document.createElement('a');
+popupBtnClosed.className = 'poppup_btnClosed';
+let popupImgBtnClosed = document.createElement('img');
+popupImgBtnClosed.src = 'images/closedPopup.svg';
+popupImgBtnClosed.alt = 'popup closed button';
+const popupTechUl = document.createElement("ul");
+popupTechUl.className = "popup_tech_ul";
+popupMain.appendChild(popupDiv);
+popupDiv.appendChild(popupTopDiv);
+popupTopDiv.appendChild(popuptitleDiv);
+popuptitleDiv.appendChild(popupTitle);
+popuptitleDiv.appendChild(popupBtnClosed);
+popupBtnClosed.appendChild(popupImgBtnClosed);
+popupTopDiv.appendChild(popupTechUl);
+for (let j = 0; j < cardProjectDesk.technologies.length; j++) {
+  let popuplistTech = document.createElement("li");
+  let popupAnchorTech = document.createElement("a");
+  popupAnchorTech.href = cardProjectDesk.linkRef[j];
+  popupAnchorTech.innerText = cardProjectDesk.technologies[j];
+  popupAnchorTech.title = cardProjectDesk.titles[j];
+  popupTechUl.appendChild(popuplistTech);
+  popuplistTech.appendChild(popupAnchorTech);
+}
+let popupContentDiv = document.createElement("div");
+popupContentDiv.className = 'popup_contentDiv';
+let popupMainProjectImg = document.createElement('img');
+popupMainProjectImg.className = 'popup_mainImg';
+popupMainProjectImg.src = 'images/imgPopupProj.svg';
+let popupContentRight = document.createElement("div");
+popupContentRight.className = 'popup_contentRight';
+const popupDescrip = document.createElement("p");
+popupDescrip.innerText = cardProjectDesk.description;
+const popupBtnsUl = document.createElement("ul");
+let popuplistLive = document.createElement("li");
+const popupBtnLive = document.createElement("a");
+popupBtnLive.className = 'popup_btnSee';
+let popupLiveImg = document.createElement('img');
+popupLiveImg.src = 'images/imgLive.svg';
+popupBtnLive.innerText = 'See live';
+popupBtnLive.title = 'live demo link';
+let popupListGit = document.createElement("li");
+const popupBtnGit = document.createElement("a");
+popupBtnGit.className = 'popup_btnSee';
+let popupSourceImg = document.createElement('img');
+popupSourceImg.src = 'images/imgSourceGitHub.svg';
+popupBtnGit.innerText = 'See source';
+popupBtnGit.title = 'git source link';
+popupDiv.appendChild(popupContentDiv);
+popupContentDiv.appendChild(popupMainProjectImg);
+popupContentDiv.appendChild(popupContentRight);
+popupContentRight.appendChild(popupDescrip);
+popupContentRight.appendChild(popupBtnsUl);
+popupBtnsUl.appendChild(popuplistLive);
+popuplistLive.appendChild(popupBtnLive);
+popuplistLive.appendChild(popupLiveImg);
+popupBtnsUl.appendChild(popupListGit);
+popupListGit.appendChild(popupBtnGit);
+popupListGit.appendChild(popupSourceImg);
+
