@@ -112,6 +112,10 @@ To run the project, do the following:
 - Twitter: [@ivang2204](https://twitter.com/ivang2204)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/iván-gonzalez-robles-957491275)
 
+👤 **Mustafa shirzad**
+
+- GitHub: @Mustafashirzad
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛩️ Future Features <a name="future-features"></a>

@@ -272,16 +272,16 @@ for (let i = 1; i < 7; i += 1) {
 // closing button popup
 document.querySelector('.poppup_btnClosed').addEventListener('click', () => {
   popupMain.style.display = 'none';
-  document.querySelector(".popupMainDiv").style.display="none";
+  document.querySelector('.popupMainDiv').style.display = 'none';
 });
 worksBtnSee.addEventListener('click', () => {
   popupMain.style.display = 'flex';
-  document.querySelector(".popupMainDiv").style.display="flex";
+  document.querySelector('.popupMainDiv').style.display = 'flex';
 });
-let allBtns= document.querySelectorAll(".worksBtnSee_2");
-allBtns.forEach((btn)=>{
-  btn.addEventListener("click",()=>{
+const allBtns = document.querySelectorAll('.worksBtnSee_2');
+allBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
     popupMain.style.display = 'flex';
-    document.querySelector(".popupMainDiv").style.display="flex";
-  })
-})
+    document.querySelector('.popupMainDiv').style.display = 'flex';
+  });
+});
