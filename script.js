@@ -292,15 +292,11 @@ allBtns.forEach((btn) => {
 });
 
 form.addEventListener("submit", function (event) {
-	// stop form submission
-	event.preventDefault();
-  const EMAIL_LOWERCASE = "Please enter an email in lowecase";
-
-	// validate the form
-	let emailValid = validateEmail(form.elements["emailInput"], EMAIL_LOWERCASE, EMAIL_INVALID);
-	// if valid, submit the form.
-	if (emailInput.value !== emailInput.lowercase()) {
+	// event.preventDefault();
+  let emailchecking = emailInput.value.toLowerCase();
+  if(emailInput.value != emailchecking)
+  {
     event.preventDefault();
-    alert("Demo only. No form was posted.");
-	}
+    document.querySelector(".errorMessage").innerHTML="Not valid ";
+  }
 });
