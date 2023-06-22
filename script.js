@@ -4,6 +4,11 @@ const mobileMenu = document.querySelector('.nav__mobile_menu');
 const navMenu = document.querySelector('.header_bar');
 const mobileMenuOptions = document.querySelectorAll('.nav_btn_list');
 const navBtnMobileClosed = document.querySelector('.nav__btn_mobile_closed');
+
+// Contact form //
+const form  = document.getElementById('contact_form');
+const emailInput  = document.getElementById('emailInput');
+
 menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
   navMenu.style.display = 'none';
@@ -284,4 +289,18 @@ allBtns.forEach((btn) => {
     popupMain.style.display = 'flex';
     document.querySelector('.popupMainDiv').style.display = 'flex';
   });
+});
+
+form.addEventListener("submit", function (event) {
+	// stop form submission
+	event.preventDefault();
+  const EMAIL_LOWERCASE = "Please enter an email in lowecase";
+
+	// validate the form
+	let emailValid = validateEmail(form.elements["emailInput"], EMAIL_LOWERCASE, EMAIL_INVALID);
+	// if valid, submit the form.
+	if (emailInput.value !== emailInput.lowercase()) {
+    event.preventDefault();
+    alert("Demo only. No form was posted.");
+	}
 });
