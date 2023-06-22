@@ -290,9 +290,8 @@ allBtns.forEach((btn) => {
     document.querySelector('.popupMainDiv').style.display = 'flex';
   });
 });
-
+// validate email field //
 form.addEventListener('submit', (event) => {
-  // event.preventDefault();
   const emailchecking = emailInput.value.toLowerCase();
   if (emailInput.value !== emailchecking) {
     event.preventDefault();
