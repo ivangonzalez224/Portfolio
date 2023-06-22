@@ -6,8 +6,8 @@ const mobileMenuOptions = document.querySelectorAll('.nav_btn_list');
 const navBtnMobileClosed = document.querySelector('.nav__btn_mobile_closed');
 
 // Contact form //
-const form  = document.getElementById('contact_form');
-const emailInput  = document.getElementById('emailInput');
+const form = document.getElementById('contact_form');
+const emailInput = document.getElementById('emailInput');
 
 menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
@@ -291,12 +291,11 @@ allBtns.forEach((btn) => {
   });
 });
 
-form.addEventListener("submit", function (event) {
-	// event.preventDefault();
-  let emailchecking = emailInput.value.toLowerCase();
-  if(emailInput.value != emailchecking)
-  {
+form.addEventListener('submit', (event) => {
+  // event.preventDefault();
+  const emailchecking = emailInput.value.toLowerCase();
+  if (emailInput.value !== emailchecking) {
     event.preventDefault();
-    document.querySelector(".errorMessage").innerHTML="Not valid ";
+    document.querySelector('.errorMessage').innerHTML = 'Please enter an email in lowercase only';
   }
 });

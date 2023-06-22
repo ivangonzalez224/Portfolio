@@ -804,20 +804,20 @@ footer {
   background-color: #fff;
   border-top: 1px solid #212121;
 }
-.popupMainDiv{
+
+.popupMainDiv {
   display: none;
   height: 100vh;
   width: 100vw;
   background-color: #cebcbc21;
   backdrop-filter: blur(3px);
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   right: 0;
-  bottom:0;
-
-
+  bottom: 0;
 }
+
 .popup_main,
 .popup_div {
   background-color: #fff;
@@ -834,17 +834,17 @@ footer {
   backdrop-filter: blur(10px);
   top: 3.2%;
   left: 3.2%;
-   right: 3.2%; 
-  bottom: 3.2%; 
+  right: 3.2%;
+  bottom: 3.2%;
   overflow-y: scroll;
-  @media (min-width:768px) {
+
+  @media (min-width: 768px) {
     height: 70vh;
     top: 6%;
     left: 3.2%;
-     right: 3.2%; 
-    bottom: 6%; 
-    padding-top:0px;
-    
+    right: 3.2%;
+    bottom: 6%;
+    padding-top: 0;
   }
 }
 
@@ -852,7 +852,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .popup_main h2 {
@@ -862,8 +861,9 @@ footer {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  @media(min-width:768px){
-    margin-bottom:0px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -907,8 +907,9 @@ footer {
 
   @media (min-width: 768px) {
     width: 50vw;
+
     /* height: 450px; */
-    margin-top:3%;
+    margin-top: 3%;
   }
 }
 
@@ -956,17 +957,19 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
-  @media(min-width:768px)
-  {
+
+  @media (min-width: 768px) {
     width: 30vw;
-    margin-top:3%;
+    margin-top: 3%;
     margin-bottom: 2.25%;
   }
 }
 
-.errorMessage{
+.errorMessage {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  color: #f55800;
 }

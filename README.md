@@ -24,7 +24,7 @@
 
 # 📖 Portfolio: mobile first <a name="about-project"></a>
 
-**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use flexbox and grid, to use media queries, and to create elements dynamically.
+**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use flexbox and grid, to use media queries, to create elements dynamically, and to add client side form validations.
 
 ## 🛠 Built With <a name="built-with"></a>
 
