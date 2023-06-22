@@ -244,6 +244,8 @@ for (let i = 1; i < 7; i += 1) {
     popupMain.style.display = 'block';
     popupTitle.innerText = cardProjectDesk.name[worksBtnSee2Desk.id];
     popupDescrip.innerText = cardProjectDesk.description[worksBtnSee2Desk.id];
+    popupBtnLive.href = cardProjectDesk.linkLive[worksBtnSee2Desk.id];
+    popupBtnGit.href = cardProjectDesk.linkSource[worksBtnSee2Desk.id];
   });
   if (i > 1) {
     detailProjectDesk.appendChild(spanCardDesk);
