@@ -24,7 +24,7 @@
 
 # 📖 Portfolio: mobile first <a name="about-project"></a>
 
-**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, and to use Flexbox.
+**Portfolio: mobile first** is an example to build a personal portfolio site and to demonstrate the ability to parse a Figma design, to use flexbox and grid, to use media queries, and to create elements dynamically.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -111,6 +111,10 @@ To run the project, do the following:
 - GitHub: [@ivangonzalez224](https://github.com/ivangonzalez224)
 - Twitter: [@ivang2204](https://twitter.com/ivang2204)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/iván-gonzalez-robles-957491275)
+
+👤 **Mustafa shirzad**
+
+- GitHub: @Mustafashirzad
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
