@@ -11,8 +11,6 @@ const emailInput = document.getElementById('emailInput');
 const nameInput = document.getElementById('nameField');
 const messageInput = document.getElementById('msgField');
 
-
-
 menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
   navMenu.style.display = 'none';
@@ -56,7 +54,7 @@ const [descrip0] = cardProjectDesk.description;
 const [feat0] = cardProjectDesk.featureImage;
 
 // contact form data //
-let formData = {userName: '', userEmail: '', userComment: ''};
+const formData = { userName: '', userEmail: '', userComment: '' };
 
 const projectsSection = document.querySelector('.works');
 const wrapperSection = document.querySelector('.wrapperProjects');
@@ -307,29 +305,42 @@ form.addEventListener('submit', (event) => {
 });
 
 // store form fields //
-function changeValue(e){
+function changeValue(e) {
   if (localStorage) {
-    let value = e.value.toLowerCase();
+    const value = e.value.toLowerCase();
     if (e.id === 'nameField') {
       formData.userName = e.value;
       localStorage.setItem('userName', formData.userName);
-    } else if (e.id === 'emailInput' && e.value  === value) {
+    } else if (e.id === 'emailInput' && e.value === value) {
       formData.userEmail = e.value;
       localStorage.setItem('userEmail', formData.userEmail);
-      } else if (e.id === 'msgField') {
-        formData.userComment = e.value;
-        localStorage.setItem('userComment', formData.userComment);
-        }
+    } else if (e.id === 'msgField') {
+      formData.userComment = e.value;
+      localStorage.setItem('userComment', formData.userComment);
+    }
   } else {
   // No support.
   }
 }
 
-window.onload=()=>{
-  if(localStorage)
-  {
+window.onload = () => {
+  if (localStorage.getItem('userEmail') !== 'undefined' || localStorage.getItem('userEmail') !== 'null') {
     emailInput.value = localStorage.getItem('userEmail');
+  }
+  if (localStorage.getItem('userName') !== 'undefined' || localStorage.getItem('userName') !== 'null') {
     nameInput.value = localStorage.getItem('userName');
+  }
+  if (localStorage.getItem('userComment') !== 'undefined' || localStorage.getItem('userComment') !== 'null') {
     messageInput.value = localStorage.getItem('userComment');
   }
-}
+};
+
+nameInput.addEventListener('input', (e) => {
+  changeValue(e.target);
+});
+emailInput.addEventListener('input', (e) => {
+  changeValue(e.target);
+});
+messageInput.addEventListener('input', (e) => {
+  changeValue(e.target);
+});
