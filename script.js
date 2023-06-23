@@ -8,6 +8,10 @@ const navBtnMobileClosed = document.querySelector('.nav__btn_mobile_closed');
 // Contact form //
 const form = document.getElementById('contact_form');
 const emailInput = document.getElementById('emailInput');
+const nameInput = document.getElementById('nameField');
+const messageInput = document.getElementById('msgField');
+
+
 
 menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
@@ -305,17 +309,27 @@ form.addEventListener('submit', (event) => {
 // store form fields //
 function changeValue(e){
   if (localStorage) {
+    let value = e.value.toLowerCase();
     if (e.id === 'nameField') {
       formData.userName = e.value;
       localStorage.setItem('userName', formData.userName);
-    } else if (e.id === 'emailInput') {
+    } else if (e.id === 'emailInput' && e.value  === value) {
       formData.userEmail = e.value;
-      localStorage.setItem('userName', formData.userEmail);
+      localStorage.setItem('userEmail', formData.userEmail);
       } else if (e.id === 'msgField') {
         formData.userComment = e.value;
-        localStorage.setItem('userName', formData.userComment);
+        localStorage.setItem('userComment', formData.userComment);
         }
   } else {
   // No support.
+  }
+}
+
+window.onload=()=>{
+  if(localStorage)
+  {
+    emailInput.value = localStorage.getItem('userEmail');
+    nameInput.value = localStorage.getItem('userName');
+    messageInput.value = localStorage.getItem('userComment');
   }
 }
