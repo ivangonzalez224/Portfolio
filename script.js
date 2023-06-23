@@ -8,6 +8,8 @@ const navBtnMobileClosed = document.querySelector('.nav__btn_mobile_closed');
 // Contact form //
 const form = document.getElementById('contact_form');
 const emailInput = document.getElementById('emailInput');
+const nameInput = document.getElementById('nameField');
+const messageInput = document.getElementById('msgField');
 
 menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
@@ -50,6 +52,9 @@ const cardProjectDesk = {
 const [name0] = cardProjectDesk.name;
 const [descrip0] = cardProjectDesk.description;
 const [feat0] = cardProjectDesk.featureImage;
+
+// contact form data //
+const formData = { userName: '', userEmail: '', userComment: '' };
 
 const projectsSection = document.querySelector('.works');
 const wrapperSection = document.querySelector('.wrapperProjects');
@@ -297,4 +302,45 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     document.querySelector('.errorMessage').innerHTML = 'Please enter an email in lowercase only';
   }
+});
+
+// store form fields //
+function changeValue(e) {
+  if (localStorage) {
+    const value = e.value.toLowerCase();
+    if (e.id === 'nameField') {
+      formData.userName = e.value;
+      localStorage.setItem('userName', formData.userName);
+    } else if (e.id === 'emailInput' && e.value === value) {
+      formData.userEmail = e.value;
+      localStorage.setItem('userEmail', formData.userEmail);
+    } else if (e.id === 'msgField') {
+      formData.userComment = e.value;
+      localStorage.setItem('userComment', formData.userComment);
+    }
+  } else {
+  // No support.
+  }
+}
+
+window.onload = () => {
+  if (localStorage.getItem('userEmail') !== 'undefined' || localStorage.getItem('userEmail') !== 'null') {
+    emailInput.value = localStorage.getItem('userEmail');
+  }
+  if (localStorage.getItem('userName') !== 'undefined' || localStorage.getItem('userName') !== 'null') {
+    nameInput.value = localStorage.getItem('userName');
+  }
+  if (localStorage.getItem('userComment') !== 'undefined' || localStorage.getItem('userComment') !== 'null') {
+    messageInput.value = localStorage.getItem('userComment');
+  }
+};
+
+nameInput.addEventListener('input', (e) => {
+  changeValue(e.target);
+});
+emailInput.addEventListener('input', (e) => {
+  changeValue(e.target);
+});
+messageInput.addEventListener('input', (e) => {
+  changeValue(e.target);
 });
