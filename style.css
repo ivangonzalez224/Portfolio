@@ -965,3 +965,12 @@ footer {
     padding: 0;
   }
 }
+
+.errorMessage {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  color: #f55800;
+}
