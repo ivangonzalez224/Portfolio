@@ -51,6 +51,9 @@ const [name0] = cardProjectDesk.name;
 const [descrip0] = cardProjectDesk.description;
 const [feat0] = cardProjectDesk.featureImage;
 
+// contact form data //
+let formData = {userName: '', userEmail: '', userComment: ''};
+
 const projectsSection = document.querySelector('.works');
 const wrapperSection = document.querySelector('.wrapperProjects');
 const popupMain = document.querySelector('.popup_main');
@@ -298,3 +301,21 @@ form.addEventListener('submit', (event) => {
     document.querySelector('.errorMessage').innerHTML = 'Please enter an email in lowercase only';
   }
 });
+
+// store form fields //
+function changeValue(e){
+  if (localStorage) {
+    if (e.id === 'nameField') {
+      formData.userName = e.value;
+      localStorage.setItem('userName', formData.userName);
+    } else if (e.id === 'emailInput') {
+      formData.userEmail = e.value;
+      localStorage.setItem('userName', formData.userEmail);
+      } else if (e.id === 'msgField') {
+        formData.userComment = e.value;
+        localStorage.setItem('userName', formData.userComment);
+        }
+  } else {
+  // No support.
+  }
+}
