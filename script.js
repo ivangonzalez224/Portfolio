@@ -29,24 +29,24 @@ navBtnMobileClosed.addEventListener('click', () => {
 
 // card object data //
 const cardProjectDesk = {
-  name: ['Multi-Post Stories', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio'],
-  description: ["A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard."],
+  name: ['To Do List', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio', 'Profesional Art Printing Data', 'Data Dashboard Healthcare', 'Website Portfolio'],
+  description: ["An application where users can create a to do list. Users can add and edit a description for each task, mark and delete those that have already been completed.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.", "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard."],
   featureImage: ['images/works1.png', './images/imgProject1.svg', './images/placeholderCard2.svg', './images/placeholderCard3.svg', './images/placeholderCard1.png', './images/placeholderCard2.svg', './images/placeholderCard3.svg'],
   linkRef: [
     'https://developer.mozilla.org/es/docs/Web/CSS',
     'https://developer.mozilla.org/es/docs/Web/HTML',
-    'https://getbootstrap.com/',
+    'https://developer.mozilla.org/es/docs/Web/JavaScript',
     'https://www.ruby-lang.org/es/',
   ],
   titles: [
     'CSS definition web page',
     'HTML definition web page',
-    'Bootstrap definition web page',
+    'JavaScript definition web page',
     'Ruby definition web page',
   ],
-  technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-  linkLive: ['https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/'],
-  linkSource: ['https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io'],
+  technologies: ['CSS', 'HTML', 'JavaScript', 'Ruby'],
+  linkLive: ['https://ivangonzalez224.github.io/To-do-list.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/', 'https://ivangonzalez224.github.io/portfolio.io/'],
+  linkSource: ['https://github.com/ivangonzalez224/To-do-list.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io', 'https://github.com/ivangonzalez224/portfolio.io'],
 };
 // card object data //
 const [name0] = cardProjectDesk.name;
