@@ -1,10 +1,12 @@
+import '../../assets/styles/Headline.css';
+
 const Headline = () => (
-  <div>
-    <div id="head-name">
+  <div className="head-main">
+    <div id="head-presentation">
       <span>
         Hello, I am
       </span>
-      <h2>Iván</h2>
+      <span id="head-name">Iván,</span>
       <span>
         a software developer crafting modern and aesthetically pleasing web sites.
       </span>

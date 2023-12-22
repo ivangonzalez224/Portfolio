@@ -1,0 +1,23 @@
+.head-main {
+  width: 100%;
+  display: flex;
+}
+
+#head-presentation {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#head-presentation span {
+  text-align: left;
+}
+
+#head-photo {
+  width: 45%;
+}
+
+#head-name {
+  font-size: 25px;
+}
