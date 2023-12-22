@@ -1,3 +1,9 @@
+:root {
+  --backColor: #181d2b;
+  --fontBlack: #363636;
+  --fontpurple: #5a79f3;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -5,7 +11,7 @@ nav {
   align-items: center;
   color: #fff;
   height: 48px;
-  background-color: #f5f5f5;
+  background-color: var(--backColor);
 }
 
 nav ul {
@@ -33,18 +39,11 @@ nav ul li {
   align-items: center;
   justify-content: center;
   margin-right: 10%;
-  background-color: #f8f8f8;
-  box-shadow:
-    0 1px 4px rgba(0, 0, 0, 0.15),
-    4px 0 4px rgba(0, 0, 0, 0.15),
-    -4px 0 4px rgba(0, 0, 0, 0.15);
   padding: 1% 4%;
-  border-radius: 11px;
 }
 
-nav ul li:hover {
-  background-color: #fff;
-  color: #000;
+nav ul li a:hover {
+  color: var(--fontpurple);
 }
 
 nav ul .nav_left {
@@ -65,7 +64,7 @@ nav ul .nav_left {
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 @media (min-width: 768px) {

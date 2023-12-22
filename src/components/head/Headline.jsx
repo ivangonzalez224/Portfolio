@@ -12,13 +12,11 @@ const Headline = () => (
       </span>
     </div>
     <div id="head-photo">
-      <img className="nav_left" />
-      <div>
+      <img className="nav_left" /> 
         <ul>
-            <li>Team Collaboration</li>
-            <li>Responsive Design</li>
-        </ul>
-      </div>
+          <li>Team Collaboration</li>
+          <li>Responsive Design</li>
+        </ul> 
     </div> 
   </div>
 );

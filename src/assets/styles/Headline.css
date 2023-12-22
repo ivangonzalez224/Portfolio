@@ -1,6 +1,10 @@
 .head-main {
   width: 100%;
+  margin-top: 5%;
   display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+
 }
 
 #head-presentation {
@@ -16,6 +20,14 @@
 
 #head-photo {
   width: 45%;
+}
+
+#head-photo ul li{
+  background-color: #fff;
+  margin-bottom: 2%;
+  padding: 4% 4%;
+  border-radius: 9px;
+  list-style: none;
 }
 
 #head-name {
