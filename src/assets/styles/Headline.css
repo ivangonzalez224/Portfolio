@@ -1,9 +1,18 @@
+:root {
+  --backColor: #181d2b;
+  --fontBlack: #363636;
+  --fontpurple: #5a79f3;
+}
+
 .head-main {
   width: 100%;
   margin-top: 5%;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  background-color: var(--backColor);
+  color: #fff;
+  font-size: 19px;
 }
 
 #head-presentation {
@@ -31,4 +40,6 @@
 
 #head-name {
   font-size: 25px;
+  color: var(--fontpurple);
+  font-weight: 900;
 }
