@@ -18,9 +18,13 @@
   justify-content: center;
 }
 
+.main_home {
+  background-color: #f5f5f5;
+}
+
 section {
   width: 100%;
-  background-color: #fff;
+  background-color: #f5f5f5;
   max-width: 765px;
 }
 

@@ -1,3 +1,9 @@
+:root {
+  --backColor: #181d2b;
+  --fontBlack: #363636;
+  --fontpurple: #5a79f3;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -5,7 +11,7 @@ nav {
   align-items: center;
   color: #fff;
   height: 48px;
-  background-color: #f5f5f5;
+  background-color: var(--backColor);
 }
 
 nav ul {
@@ -33,18 +39,25 @@ nav ul li {
   align-items: center;
   justify-content: center;
   margin-right: 10%;
-  background-color: #f8f8f8;
-  box-shadow:
-    0 1px 4px rgba(0, 0, 0, 0.15),
-    4px 0 4px rgba(0, 0, 0, 0.15),
-    -4px 0 4px rgba(0, 0, 0, 0.15);
   padding: 1% 4%;
-  border-radius: 11px;
 }
 
-nav ul li:hover {
-  background-color: #fff;
-  color: #000;
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown-menu li a {
+  display: flex; /* Display links as blocks for vertical stacking */
+  padding: 0.5rem 1rem; /* Add spacing between links */
+  text-decoration: none; /* Remove underlines from links */
+  color: var(--backColor);
+  width: 50%;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  color: var(--fontpurple);
 }
 
 nav ul .nav_left {
@@ -63,9 +76,65 @@ nav ul .nav_left {
   display: none;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #000;
+.dropdown-container {
+  position: fixed; /* Stay in place even when scrolling */
+  top: 0; /* Start at the top of the viewport */
+  right: 0; /* Align to the left */
+  width: 100%; /* Cover the full width */
+  height: 100%;
+  padding-top: 48px;
+  background-color: #3636369b;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.dropdown-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem; /* Add spacing between links */
+  border-bottom: solid 1px var(--fontBlack);
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#dropdown-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1%;
+}
+
+#dropdown-top img {
+  width: 10%;
+}
+
+#dropdown-top button {
+  background: none;
+}
+
+.dropdown-menu li:last-child {
+  justify-self: flex-end;
+  align-self: center;
+  width: 30%;
+  margin-left: 12%;
+  border-bottom: solid 5px var(--fontBlack);
+  margin-top: auto;
+  margin-bottom: 5%;
+}
+
+.drop-icon {
+  margin-right: 7%;
 }
 
 @media (min-width: 768px) {
@@ -84,5 +153,9 @@ nav ul li a {
 
   #nav_name {
     display: flex;
+  }
+
+  .dropdown-container {
+    display: none;
   }
 }
