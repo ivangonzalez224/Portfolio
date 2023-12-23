@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-
 }
 
 #head-presentation {
@@ -22,7 +21,7 @@
   width: 45%;
 }
 
-#head-photo ul li{
+#head-photo ul li {
   background-color: #fff;
   margin-bottom: 2%;
   padding: 4% 4%;
