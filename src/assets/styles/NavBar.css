@@ -9,6 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
   color: #fff;
   height: 48px;
   background-color: var(--backColor);
@@ -119,8 +120,10 @@ nav ul .nav_left {
   width: 10%;
 }
 
-#dropdown-top button {
+#dropdown-top button,
+#dropdown-top button:hover {
   background: none;
+  border: none;
 }
 
 .dropdown-menu li:last-child {

@@ -1,4 +1,6 @@
 import '../../assets/styles/Headline.css';
+import { FaPlus } from "react-icons/fa";
+
 
 const Headline = () => (
   <div className="head-main">
@@ -12,11 +14,11 @@ const Headline = () => (
       </span>
     </div>
     <div id="head-photo">
-      <img className="nav_left" /> 
-        <ul>
-          <li>Team Collaboration</li>
-          <li>Responsive Design</li>
-        </ul> 
+      <img className="head-cart" alt="cartoon image" /> 
+      <ul>
+        <li><FaPlus className="head-plus"/>Team Collaboration</li>
+        <li><FaPlus className="head-plus"/>Responsive Design</li>
+      </ul> 
     </div> 
   </div>
 );
