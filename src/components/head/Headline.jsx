@@ -14,7 +14,7 @@ const Headline = () => (
       </span>
     </div>
     <div id="head-photo">
-      <img className="head-cart" alt="cartoon image" /> 
+      <img className="head-cart" src=" " alt="cartoon photo" /> 
       <ul>
         <li><FaPlus className="head-plus"/>Team Collaboration</li>
         <li><FaPlus className="head-plus"/>Responsive Design</li>
