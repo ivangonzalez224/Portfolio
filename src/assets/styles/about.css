@@ -1,0 +1,18 @@
+:root {
+  --backColor: #181d2b;
+  --fontBlack: #363636;
+  --fontpurple: #5a79f3;
+}
+
+.about-main {
+  width: 100%;
+  padding: 9% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: var(--backColor);
+  font-size: 21px;
+}
