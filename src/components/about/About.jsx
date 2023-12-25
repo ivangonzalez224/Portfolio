@@ -2,9 +2,9 @@ import '../../assets/styles/about.css';
 
 
 const About = () => (
-  <div className="about-main">
+  <div className="about-main" id="about">
     <span id="about-title">ABOUT</span>
-    <span>Get to know more about me</span>
+    <span id="about-subtitle">Get to know more about me</span>
     <div className="about-content">
       <div id="about-presentation">
         <span>

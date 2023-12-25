@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscChromeClose } from "react-icons/vsc";
 import { GrContact } from "react-icons/gr";
@@ -18,28 +17,28 @@ const NavBar = () => {
     <nav>
       <ul id="nav_name">
         <li className="nav_left">
-          <NavLink to="/">Iván</NavLink>
+        <a href="#projects">Iván</a>
         </li>
       </ul>
       <ul id="nav_cartoon">
         <li className="nav_left">
-          <NavLink to="/"> </NavLink>
+          <a href="#projects"> </a>
         </li>
       </ul>
       <ul id="nav-rigth">
         <li>
-          <NavLink to="/">Projects</NavLink>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <NavLink to="/">About</NavLink>
+          <a href="#about">About</a>
         </li>
         <li>
-          <NavLink to="/">Contact</NavLink>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <ul id="nav-ham">
         <li onClick={toggleDropdown}>
-          <NavLink to="/"><RxHamburgerMenu /></NavLink>
+          <a><RxHamburgerMenu /></a>
         </li>
         
       </ul>
@@ -50,13 +49,13 @@ const NavBar = () => {
             <button onClick={toggleDropdown}><VscChromeClose /></button>
           </li>
           <li>
-            <NavLink to="/"><GrProjects className="drop-icon"/> Projects</NavLink>
+            <a href="#projects" onClick={toggleDropdown}><GrProjects className="drop-icon"/> Projects</a>
           </li>
           <li>
-            <NavLink to="/"><TbInfoSquareRounded className="drop-icon"/> About</NavLink>
+            <a href="#about" onClick={toggleDropdown}><TbInfoSquareRounded className="drop-icon"/> About</a>
           </li>
           <li>
-            <NavLink to="/"><GrContact className="drop-icon"/> Contact</NavLink>
+            <a href="#contact" onClick={toggleDropdown}><GrContact className="drop-icon"/> Contact</a>
           </li>
           <li>
           </li>

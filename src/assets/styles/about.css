@@ -22,9 +22,14 @@
   font-size: 21px;
 }
 
+#about-subtitle {
+  font-size: 17px;
+}
+
 .about-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 5%;
 }
 
@@ -40,6 +45,7 @@
   align-items: flex-start;
   text-align: left;
   box-sizing: border-box;
+  margin-bottom: 5%;
 }
 
 #contact-btn {
@@ -54,6 +60,7 @@
   color: #4a4a4a;
   padding: 2% 4%;
 }
+
 #about-skills {
   width: 79%;
   display: flex;
@@ -92,7 +99,7 @@
 
   #about-presentation {
     width: 35%;
-    margin-right: 5%;
+    margin: 0 5% 0 0;
   }
 
   #about-skills {
