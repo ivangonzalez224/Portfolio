@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-//import '../../assets/styles/projects.css';
+import '../../assets/styles/projects.css';
 
 const ProjectsItem = (
   {

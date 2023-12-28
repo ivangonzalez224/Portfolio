@@ -1,0 +1,68 @@
+:root {
+  --backColor: #181d2b;
+  --fontBlack: #363636;
+  --fontpurple: #5a79f3;
+}
+
+.projects-main {
+  width: 100%;
+  padding: 3% 0 7% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: var(--backColor);
+  font-size: 17px;
+}
+
+.projects-main h2 {
+  color: var(--fontpurple);
+  font-size: 21px;
+}
+
+.projects-filter {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 3%;
+  margin-bottom: 3%;
+}
+
+.projects-filter button {
+  border: none;
+}
+
+.projects-filter button:focus {
+  outline: none;
+}
+
+.projects-list {
+  width: 80%;
+  display: flex;
+  gap: 2%;
+}
+
+.project-item {
+  width: 22%;
+  background-color: var(--fontpurple);
+  border-radius: 5px;
+  padding: 1% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  background-color: #fff;
+}
+
+.project-item ul {
+  display: flex;
+}
+
+.project-item ul li {
+  list-style: none;
+}
