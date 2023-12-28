@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../../assets/styles/projects.css';
+//import '../../assets/styles/projects.css';
 
 const ProjectsItem = (
   {
@@ -8,7 +8,12 @@ const ProjectsItem = (
 ) => (
   <div className="project-item">
     <span>{projectName}</span>
-    <div className="project-img" style={{ backgroundImage: `url(${projectImage})` }}> </div>
+    <div className="project-img" >
+    <img
+      src={projectImage}
+      alt={projectName}
+    />
+    </div>
     <ul className="project-tech">
       <li>{tech1}</li>
       <li>{tech2}</li>

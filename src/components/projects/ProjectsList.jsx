@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import Carousel from 'react-multi-carousel';
 import ProjectsItem from './ProjectsItem';
 import { getProjects } from '../../redux/projects/ProjectsSlice';
+import 'react-multi-carousel/lib/styles.css';
 import '../../assets/styles/projects.css';
 
 const ProjectsList = () => {
@@ -10,9 +12,27 @@ const ProjectsList = () => {
   const [selectedFilter, setSelectedFilter] = useState('All');
   useEffect(() => {
     if (projectItems.length === 0) {
-      dispatch(getProjects());
+      dispatch(getProjects());  
     }
   });
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 992 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 992, min: 765 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 765, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
     <div className="projects-main" id="projects">
@@ -43,20 +63,24 @@ const ProjectsList = () => {
         >Ruby on Rails</button>
       </div>
       <div className="projects-list">
-      {projectItems.map((project) => (
-          <ProjectsItem
-            key={project.id}
-            projectId={project.id}
-            projectName={project.name}
-            projectImage={project.image}
-            tech1={project.tech1}
-            tech2={project.tech2}
-            tech3={project.tech3}
-          />
-        ))}
-      </div>
+         
+        <Carousel responsive={responsive}>
+          {projectItems.map((project) => (
+              <ProjectsItem
+                key={project.id}
+                projectId={project.id}
+                projectName={project.name}
+                projectImage={project.image}
+                tech1={project.tech1}
+                tech2={project.tech2}
+                tech3={project.tech3}
+              />
+             
+          ))}
+        </Carousel>
+      </div> 
     </div>
-  )
+  );
 };
 
 export default ProjectsList;

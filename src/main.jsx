@@ -5,16 +5,18 @@ import App from './App.jsx';
 import './index.css';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import { getProjects } from './redux/projects/ProjectsSlice';
 
+store.dispatch(getProjects());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className="main">
-    <React.StrictMode>
-      <Provider store={store}> 
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </Provider> 
-    </React.StrictMode>
+    <Provider store={store}>
+      <React.StrictMode>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+      </React.StrictMode>
+    </Provider>
   </div>,
 );
