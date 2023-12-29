@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-//import '../../assets/styles/projects.css';
 
 const ProjectsItem = (
   {
@@ -7,18 +6,24 @@ const ProjectsItem = (
   },
 ) => (
   <div className="project-item">
-    <span>{projectName}</span>
-    <div className="project-img" >
-    <img
-      src={projectImage}
-      alt={projectName}
-    />
+    <div id="itemBtn" >
+      <button>Live Demo</button>
+      <button>See on Github</button>
     </div>
-    <ul className="project-tech">
-      <li>{tech1}</li>
-      <li>{tech2}</li>
-      <li>{tech3}</li>
-    </ul>
+    <div id="itemContent">
+      <span>{projectName}</span>
+      <div className="project-img" >
+        <img
+          src={projectImage}
+          alt={projectName}
+        />
+      </div>
+      <ul className="project-tech">
+        <li>{tech1}</li>
+        <li>{tech2}</li>
+        <li>{tech3}</li>
+      </ul>
+    </div>
   </div>
 );
 
