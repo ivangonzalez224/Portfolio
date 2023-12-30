@@ -34,6 +34,12 @@ const ProjectsList = () => {
     },
   };
 
+  const filteredProjects = projectItems.filter((project) => {
+    if (selectedFilter === 'All') {
+      return true;
+    }
+    return project.filter.includes(selectedFilter);
+  });
   return (
     <div className="projects-main" id="projects">
       <h2>Latest Projects</h2>
@@ -65,12 +71,15 @@ const ProjectsList = () => {
       <div className="projects-list">
          
         <Carousel responsive={responsive}>
-          {projectItems.map((project) => (
+          {filteredProjects.map((project) => (
               <ProjectsItem
                 key={project.id}
                 projectId={project.id}
                 projectName={project.name}
                 projectImage={project.image}
+                projectLive={project.live}
+                projectGithub={project.github}
+                backImg={project.backimg}
                 tech1={project.tech1}
                 tech2={project.tech2}
                 tech3={project.tech3}

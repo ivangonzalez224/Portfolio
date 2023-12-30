@@ -2,14 +2,17 @@ import PropTypes from 'prop-types';
 
 const ProjectsItem = (
   {
-    projectImage, projectName, tech1, tech2, tech3, projectId,
+    projectImage, projectName, tech1, tech2, tech3, backImg, projectLive, projectGithub, projectId,
   },
 ) => (
   <div className="project-item">
-    <div id="itemBtn" >
-      <button>Live Demo</button>
-      <button>See on Github</button>
+    <div id="backProjectItem" style={{ backgroundImage: `url(${backImg})` }}>
+      <div id="itemProjectBtn">
+        <a href={projectLive} target="_blank" rel="noreferrer">Live Demo</a>
+        <a href={projectGithub} target="_blank" rel="noreferrer">See on Github</a>
+      </div>
     </div>
+    
     <div id="itemContent">
       <span>{projectName}</span>
       <div className="project-img" >
@@ -30,9 +33,12 @@ const ProjectsItem = (
 ProjectsItem.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
+  backImg: PropTypes.string.isRequired,
   tech1: PropTypes.string.isRequired,
   tech2: PropTypes.string.isRequired,
   tech3: PropTypes.string.isRequired,
+  projectLive: PropTypes.string.isRequired,
+  projectGithub: PropTypes.string.isRequired,
   projectId: PropTypes.number.isRequired,
 };
 export default ProjectsItem;
