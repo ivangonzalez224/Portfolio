@@ -43,6 +43,16 @@ const Contact = () => {
             <span>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat,
                     contact me directly or fill out the form and I will back to you soon.
             </span>
+            <div className="contact-mobile">
+              <div className="mobileEmail">
+                <span id="contact-emailUp">EMAIL</span>
+                <span>ivan.gonzalezr224@gmail.com</span>
+              </div>
+              <div className="contact-social">
+                <a className="social-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+                <a className="social-link" href="https://github.com/ivangonzalez224" target="_blank" rel="noreferrer"><BsGithub /></a>
+            </div>
+        </div>
             <form onSubmit={handleSubmit}>
               <label htmlFor="fullName">Name</label>
               <input

@@ -1,3 +1,7 @@
+:root {
+  --fontBlack: #363636;
+}
+
 .contact-main {
   width: 100%;
   padding: 3% 0;
@@ -14,37 +18,63 @@
 .contact-main h2 {
   color: var(--fontpurple);
   font-size: 21px;
+  margin-bottom: 7%;
 }
 
 .contact-left span {
-  width: 70%;
+  width: 80%;
   text-align: left;
   font-size: 17px;
   margin-bottom: 7%;
 }
 
 .contact-content {
-  width: 85%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-left {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-}
-
-form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.contact-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-mobile {
+  width: 80%;
+  border-radius: 5px;
+  color: var(--fontBlack);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 2%;
+  margin-bottom: 7%;
+}
+
+.mobileEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 
 form label {
+  width: 100%;
   font-size: 17px;
+  text-align: left;
 }
 
 #message {
@@ -52,7 +82,7 @@ form label {
 }
 
 .contact-input {
-  width: 70%;
+  width: 100%;
   margin-bottom: 5%;
   padding: 2%;
   border: none;
@@ -60,6 +90,7 @@ form label {
   color: #d1d1d1;
   font-size: 17px;
   border-radius: 11px;
+  box-sizing: border-box;
   background-color: #44474d;
 }
 
@@ -80,9 +111,7 @@ form label {
 }
 
 .contact-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: none;
 }
 
 .contact-right span {
@@ -92,21 +121,66 @@ form label {
 #contact-emailUp {
   font-size: 19px;
   font-weight: 700;
+  margin: 0;
 }
 
 .contact-social {
   display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  margin-top: 15%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact-social a {
-  margin-right: 21%;
   cursor: pointer;
   text-decoration: none;
+  margin: 30% 0;
 }
 
 .social-link:visited {
-  color: #fff;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    width: 85%;
+    flex-direction: row;
+  }
+
+  .contact-main h2 {
+    margin-bottom: 4%;
+  }
+
+  .contact-mobile {
+    display: none;
+  }
+
+  .contact-left {
+    width: 55%;
+    align-items: flex-start;
+  }
+
+  form {
+    align-items: flex-start;
+  }
+
+  .contact-social {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+    margin-top: 15%;
+  }
+
+  .contact-social a {
+    margin: 0 21% 0 0;
+  }
+
+  .social-link:visited {
+    color: #fff;
+  }
+
+  .contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
