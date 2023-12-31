@@ -56,12 +56,15 @@ form label {
   margin-bottom: 5%;
   padding: 2%;
   border: none;
+  outline: none;
+  color: #d1d1d1;
+  font-size: 17px;
   border-radius: 11px;
   background-color: #44474d;
 }
 
 .contact-submit-btn {
-  margin-top: 5%;
+  margin-top: 2%;
   border-radius: 11px;
   background-color: var(--fontpurple);
   font-size: 19px;
@@ -74,4 +77,36 @@ form label {
   padding: 2% 7%;
   background-color: #8b9de8;
   color: #363636;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-right span {
+  font-size: 17px;
+}
+
+#contact-emailUp {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin-top: 15%;
+}
+
+.contact-social a {
+  margin-right: 21%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-link:visited {
+  color: #fff;
 }

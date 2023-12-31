@@ -34,6 +34,23 @@
   width: 39%;
 }
 
+.head-social {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  margin-top: 9%;
+}
+
+.head-social a {
+  margin-right: 11%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.head-link:visited {
+  color: #fff;
+}
+
 #head-photo {
   display: flex;
   justify-content: flex-start;

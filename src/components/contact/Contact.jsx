@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import '../../assets/styles/contact.css';
 
 const Contact = () => {
@@ -39,7 +40,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="contact-content">
         <div className="contact-left">
-            <span>I'm always interested in hearing about new projects, so if you'd like to chat,
+            <span>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat,
                     contact me directly or fill out the form and I will back to you soon.
             </span>
             <form onSubmit={handleSubmit}>
@@ -79,9 +80,11 @@ const Contact = () => {
           </form>
         </div>
         <div className="contact-right">
-          <span>EMAIL</span>
+          <span id="contact-emailUp">EMAIL</span>
           <span>ivan.gonzalezr224@gmail.com</span>
-          <div className="contact-social"> 
+          <div className="contact-social">
+            <a className="social-link" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
+            <a className="social-link" href="https://github.com/ivangonzalez224" target="_blank" rel="noreferrer"><BsGithub /></a>
           </div>
         </div>
       </div>
