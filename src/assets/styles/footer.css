@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: #858585 solid 1px;
+  padding: 20px;
+  background-color: var(--backColor);
+  color: #fff;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social li {
+  margin: 0 30%;
+}
+
+.footer-link:visited {
+  color: #fff;
+}
+
+#footer-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-mail a {
+  text-decoration: none;
+  color: #fff;
+}
