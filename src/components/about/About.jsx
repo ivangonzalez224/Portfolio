@@ -17,10 +17,9 @@ const About = () => (
           I&apos;m passionate about crafting solutions that make a real difference.
         </p>
         <p>
-          Let&apos;s collaborate on your next project! Drop me a line on my contact page, or 
+          Let&apos;s collaborate on your next project! Drop me a line on my contact section, or 
           let&apos;s have a coffee chat to discuss your ideas.
         </p>
-        <button id="contact-btn">Contact me</button>
       </div>
       <div id="about-skills">
         <span>Skills</span>  

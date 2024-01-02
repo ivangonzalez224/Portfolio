@@ -4,7 +4,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 
 const Headline = () => (
-  <div className="head-main">
+  <div className="head-main" id="home">
     <div id="head-presentation">
       <span>
         Hello, I am

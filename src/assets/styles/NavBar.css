@@ -52,6 +52,10 @@ nav ul li a {
   color: #fff;
 }
 
+.active {
+  color: var(--fontpurple);
+}
+
 .dropdown-menu li a {
   display: flex; /* Display links as blocks for vertical stacking */
   padding: 0.5rem 1rem; /* Add spacing between links */
