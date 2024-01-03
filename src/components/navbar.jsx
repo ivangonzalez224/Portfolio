@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscChromeClose } from "react-icons/vsc";
 import { GrContact, GrProjects } from "react-icons/gr";
 import { TbInfoSquareRounded, TbHome } from "react-icons/tb";
 import '../assets/styles/NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ sections }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
 
@@ -13,6 +14,25 @@ const NavBar = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveLink(entry.target.id.slice(0, -1));
+        }
+      });
+    });
+
+    sections.forEach((section) => {
+      if (section.current !== undefined) {
+        observer.observe(section.current);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [sections]);
   return (
     <nav>
       <ul id="nav_name">
@@ -71,4 +91,7 @@ const NavBar = () => {
   )
 };
 
+NavBar.propTypes = {
+  sections: PropTypes.array,
+};
 export default NavBar;
