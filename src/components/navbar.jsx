@@ -5,6 +5,7 @@ import { VscChromeClose } from "react-icons/vsc";
 import { GrContact, GrProjects } from "react-icons/gr";
 import { TbInfoSquareRounded, TbHome } from "react-icons/tb";
 import '../assets/styles/NavBar.css';
+import myPhoto from '../assets/images/myPic.png';
 
 const NavBar = ({ sections }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -68,7 +69,7 @@ const NavBar = ({ sections }) => {
       <div className="dropdown-container" style={{ display: dropdownOpen ? 'flex' : 'none' }}>
         <ul className="dropdown-menu">
           <li id="dropdown-top">
-            <img></img>
+            <img src={myPhoto}></img>
             <button onClick={toggleDropdown}><VscChromeClose /></button>
           </li>
           <li>

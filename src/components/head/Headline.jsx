@@ -1,5 +1,8 @@
 import '../../assets/styles/Headline.css';
 import myPic from '../../assets/images/myPic.png';
+import myLinkedin from '../../assets/images/myLinkedin.png';
+import myGithub from '../../assets/images/myGithub.png';
+import myGmail from '../../assets/images/myGmail.png';
 
 const Headline = () => (
   <div className="head-main" id="home">
@@ -20,13 +23,13 @@ const Headline = () => (
       </span>
       <div className="head-imgDiv head-imgSocial">
         <a className="socialLinks" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer">
-          <img className="head-mySocial" src={myPic} alt="Linkedin" />
+          <img className="head-mySocial" src={myLinkedin} alt="Linkedin" />
         </a>
         <a href="https://github.com/ivangonzalez224" target="_blank" rel="noreferrer">
-          <img className="head-mySocial" src={myPic} alt="Github" />
+          <img className="head-mySocial" src={myGithub} alt="Github" />
         </a>
         <a href="mailto:ivan.gonzalezr224@gmail.com" target="_blank" rel="noreferrer">
-          <img className="head-mySocial" src={myPic} alt="Gmail" />
+          <img className="head-mySocial" src={myGmail} alt="Gmail" />
         </a>
       </div>
     </div>
