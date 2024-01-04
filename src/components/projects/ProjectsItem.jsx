@@ -9,7 +9,7 @@ const ProjectsItem = (
     <div id="backProjectItem" style={{ backgroundImage: `url(${backImg})` }}>
       <div id="itemProjectBtn">
         <a href={projectLive} target="_blank" rel="noreferrer">Live Demo</a>
-        <a href={projectGithub} target="_blank" rel="noreferrer">See on Github</a>
+        <a href={projectGithub} target="_blank" rel="noreferrer">Source Code</a>
       </div>
     </div>
     
