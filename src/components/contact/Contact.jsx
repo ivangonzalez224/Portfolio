@@ -7,18 +7,15 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const form = document.forms['submit-form']
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     // 
-    const response = await fetch(' ', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxCKNrr_Fdrg1OX5sq8Uf7ezhpJucaeYlaMpfDN5XzgcKeiyv3LHN3lv_vRzI3nGOQizw/exec', {
       method: 'POST',
-      body: JSON.stringify({
-        fullName,
-        email,
-        message,
-      }),
+      body: new FormData(form)
     });
 
     if (response.ok) {
@@ -53,7 +50,7 @@ const Contact = () => {
                 <a className="social-link" href="https://github.com/ivangonzalez224" target="_blank" rel="noreferrer"><BsGithub /></a>
             </div>
         </div>
-            <form onSubmit={handleSubmit}>
+            <form name="submit-form" onSubmit={handleSubmit}>
               <label htmlFor="fullName">Name</label>
               <input
                 type="text"
