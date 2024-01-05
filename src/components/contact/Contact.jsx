@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import '../../assets/styles/contact.css';
 
@@ -8,6 +9,22 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const form = document.forms['submit-form']
+  const [showPopup, setShowPopup] = useState(false);
+
+  const Popup = ({ message, onClose }) => {
+    return (
+      <div className="popup-container">
+        <div className="popup-content">
+          <p>{message}</p>
+          <span>Thank you for making contact</span>
+          <p>I will back to you as soon as possible</p>
+          <button className="popup-close-btn" onClick={onClose}>
+            Close
+          </button>
+        </div>
+      </div>
+    );
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,7 +37,7 @@ const Contact = () => {
 
     if (response.ok) {
       // Success
-      alert('Your message has been sent!');
+      setShowPopup(true);
       setSubmitting(false);
       setFullName('');
       setEmail('');
@@ -95,8 +112,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {showPopup && <Popup message="Your message has been sent! ✔️" onClose={() => setShowPopup(false)} />}
     </section>    
   );
+};
+
+Contact.propTypes = {
+  message: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Contact;

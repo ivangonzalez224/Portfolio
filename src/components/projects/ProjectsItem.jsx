@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ProjectsItem = (
   {
-    projectImage, projectName, tech1, tech2, tech3, backImg, projectLive, projectGithub, projectId,
+    projectImage, projectName, tech1, tech2, tech3, backImg, projectLive, projectGithub,
   },
 ) => (
   <div className="project-item">

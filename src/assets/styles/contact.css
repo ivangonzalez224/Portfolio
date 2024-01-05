@@ -140,6 +140,46 @@ form label {
   color: #000;
 }
 
+.popup-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 48px;
+  background-color: #3636369b;
+  box-sizing: border-box;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  width: 80%;
+  height: 60%;
+  color: #000;
+  background-color: #fff;
+  border-radius: 11px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-container span {
+  color: var(--fontpurple);
+  font-weight: 700;
+}
+
+.popup-content button {
+  background-color: var(--fontpurple);
+  color: #fff;
+  padding: 1% 9%;
+}
+
 @media (min-width: 768px) {
   .contact-main {
     padding: 3% 0;
@@ -186,5 +226,9 @@ form label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .popup-content {
+    width: 43%;
   }
 }
