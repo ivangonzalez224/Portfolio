@@ -38,12 +38,12 @@ const NavBar = ({ sections }) => {
     <nav>
       <ul id="nav_name">
         <li className="nav_left">
-          <a href="#">Iván</a>
+          <a href="#home">Iván</a>
         </li>
       </ul>
       <ul id="nav_cartoon">
         <li className="nav_left">
-          <a href="#"> </a>
+          <a href="#home"><img src={myPhoto} alt="My photo" /></a>
         </li>
       </ul>
       <ul id="nav-rigth">
