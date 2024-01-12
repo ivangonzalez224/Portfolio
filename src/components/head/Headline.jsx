@@ -19,7 +19,10 @@ const Headline = () => (
         <span id="head-name">Iván,</span>
       </div>  
       <span>
-        a software developer crafting modern and aesthetically pleasing web sites 🚀
+        a software developer crafting modern and aesthetically pleasing web sites. 🚀
+      </span>
+      <span>
+      Teamwork oriented and focused on responsive design.
       </span>
       <div className="head-imgDiv head-imgSocial">
         <a className="socialLinks" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer">

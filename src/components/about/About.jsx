@@ -27,16 +27,21 @@ const About = () => (
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-          <li>React & Redux</li>
+          <li>TailwindCSS</li>
         </ul> 
         <ul>
+          <li>React & Redux</li>
+          <li>TypeScript</li>
           <li>Bootstrap</li>
-          <li>Jest</li>
-          <li>Ruby on Rails</li>
         </ul>
         <ul>
+          <li>Ruby on Rails</li>
           <li>PostgreSQL</li>
+        </ul>
+        <ul>
           <li>Git</li>
+          <li>Vite.js</li>
+          <li>Jest</li>
         </ul> 
       </div>
     </div>  

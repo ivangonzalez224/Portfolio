@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 9%;
-  font-size: 33px;
+  font-size: 31px;
 }
 
 #head-presentation #head-hello {
@@ -71,11 +71,11 @@
 }
 
 .head-myPic {
-  width: 11%;
+  width: 15%;
 }
 
 .head-mySocial {
-  width: 53%;
+  width: 59%;
   margin-right: 0;
 }
 
@@ -118,7 +118,7 @@
 @media (min-width: 768px) {
   .head-main {
     width: 100%;
-    padding: 9% 0;
+    padding: 7% 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,11 +126,15 @@
   }
 
   #head-presentation {
-    width: 49%;
+    width: 61%;
     margin: 0 1% 0 0;
   }
 
   #head-photo {
-    width: 21%;
+    width: 11%;
+  }
+
+  .head-mySocial {
+    width: 49%;
   }
 }
