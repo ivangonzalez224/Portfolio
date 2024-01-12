@@ -67,11 +67,28 @@ nav ul li a:hover {
   color: var(--fontpurple);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav_left {
+  animation: fadeIn 1s ease-in-out; /* Adjust duration and timing as needed */
+}
+
 nav ul .nav_left {
   width: 6%;
   border-radius: 50px;
   justify-content: flex-start;
   align-items: center;
+  font-size: 25px;
 }
 
 #nav-ham {
