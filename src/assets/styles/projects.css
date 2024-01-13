@@ -64,6 +64,18 @@
   padding: 0;
 }
 
+#itemContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#itemContent p {
+  text-align: left;
+  color: #000;
+  font-size: 15px;
+}
+
 .project-tech li {
   border: #fff solid 1px;
   color: #fff;
