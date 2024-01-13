@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ProjectsItem = (
   {
-    projectImage, projectName, tech1, tech2, tech3, backImg, projectLive, projectGithub,
+    projectImage, projectName, tech1, tech2, tech3, backImg, projectLive, projectGithub, projectDescription,
   },
 ) => (
   <div className="project-item">
@@ -21,6 +21,7 @@ const ProjectsItem = (
           alt={projectName}
         />
       </div>
+      <p>{projectDescription}</p>
       <ul className="project-tech">
         <li>{tech1}</li>
         <li>{tech2}</li>
@@ -33,6 +34,7 @@ const ProjectsItem = (
 ProjectsItem.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectImage: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string.isRequired,
   backImg: PropTypes.string.isRequired,
   tech1: PropTypes.string.isRequired,
   tech2: PropTypes.string.isRequired,

@@ -80,6 +80,7 @@ const ProjectsList = () => {
                 projectLive={project.live}
                 projectGithub={project.github}
                 backImg={project.backimg}
+                projectDescription={project.description}
                 tech1={project.tech1}
                 tech2={project.tech2}
                 tech3={project.tech3}
