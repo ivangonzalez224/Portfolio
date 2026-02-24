@@ -4,45 +4,24 @@ import '../../assets/styles/about.css';
 const About = () => (
   <div className="about-main" id="about">
     <span id="about-title">ABOUT</span>
-    <span id="about-subtitle">Get to know more about me</span>
+    <span id="about-subtitle">Engineering solutions with a Product Mindset</span>
     <div className="about-content">
       <div id="about-presentation">
-        <span>
-          Hello
-        </span>
+        <span>Professional Profile</span>
         <p>
-          My name is Iván Gonzalez, and I am a pasionate Full Stack Developer who uses technology 
-          to build engaging mobile and web applications that empower businesses. Whether you&apos;re launching 
-          a new brand, streamlining operations, or reaching new audiences, 
-          I&apos;m passionate about crafting solutions that make a real difference.
+          I am a <strong>Senior Full Stack Engineer</strong> and <strong>Product Developer</strong> with a track record of building scalable mobile and web applications. My approach goes beyond writing code; I focus on architecting solutions that drive business growth and optimize user experiences through cutting-edge technology, including <strong>AI implementation</strong> and robust backend systems.
         </p>
         <p>
-          Let&apos;s collaborate on your next project! Drop me a line on my contact section, or 
-          let&apos;s have a coffee chat to discuss your ideas.
+          With experience leading technical projects and mentoring developers, I specialize in transforming complex requirements into high-performance products. Whether it's a mobile ecosystem for a specialized market or a high-traffic web platform, I ensure every line of code adds real value.
         </p>
       </div>
       <div id="about-skills">
-        <span>Skills</span>  
+        <span>Core Tech Stack</span>  
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TailwindCSS</li>
-        </ul> 
-        <ul>
-          <li>React Native</li>
-          <li>React.js</li>
-          <li>TypeScript</li>
-        </ul>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL</li>
-          <li>Bootstrap</li>
-        </ul>
-        <ul>
-          <li>Git</li>
-          <li>Vite.js</li>
-          <li>Jest</li>
+          <li><strong>Frontend:</strong> React.js, TypeScript, TailwindCSS, Bootstrap</li>
+          <li><strong>Mobile:</strong> React Native (Bare Workflow, AI Vision)</li>
+          <li><strong>Backend:</strong> Ruby on Rails, Python (FastAPI), PHP</li>
+          <li><strong>Database & Dev:</strong> PostgreSQL, MySQL, Git, Docker, Jest</li>
         </ul> 
       </div>
     </div>  
