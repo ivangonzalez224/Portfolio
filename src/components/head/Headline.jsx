@@ -16,13 +16,13 @@ const Headline = () => (
       </div>
       <div>
         <span>I am </span>
-        <span id="head-name">Iván,</span>
+        <span id="head-name">Iván Gonzalez,</span>
       </div>  
       <span>
-        a software developer crafting modern and aesthetically pleasing web and mobile applications. 🚀
+        a <strong>Senior Full Stack Engineer</strong> & <strong>Product Developer</strong> crafting high-performance AI-driven mobile and web applications. 🚀
       </span>
       <span>
-      I thrive in teamwork environments and am focused on delivering exceptional user experiences across all platforms.
+        I specialize in building scalable architectures and leading technical projects with a focus on delivering exceptional user experiences and robust backend solutions.
       </span>
       <div className="head-imgDiv head-imgSocial">
         <a className="socialLinks" href="https://www.linkedin.com/in/iv%C3%A1n-gonzalez/" target="_blank" rel="noreferrer">
