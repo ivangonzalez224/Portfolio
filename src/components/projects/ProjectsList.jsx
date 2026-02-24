@@ -76,7 +76,19 @@ const ProjectsList = () => {
             backgroundColor: selectedFilter === 'Ruby on Rails' ? '#5a79f3' : '#fff',
             color: selectedFilter === 'Ruby on Rails' ? '#fff' : '#181d2b',
           }}
-        >Ruby on Rails</button>
+        >
+          Ruby on Rails
+        </button>
+        <button
+          type="button"
+          onClick={() => setSelectedFilter('Python')}
+          style={{
+            backgroundColor: selectedFilter === 'Python' ? '#5a79f3' : '#fff',
+            color: selectedFilter === 'Python' ? '#fff' : '#181d2b',
+          }}
+        >
+          Python
+        </button>
       </div>
       <div className="projects-list">
          
