@@ -89,6 +89,16 @@ const ProjectsList = () => {
         >
           Python
         </button>
+        <button
+          type="button"
+          onClick={() => setSelectedFilter('PHP')}
+          style={{
+            backgroundColor: selectedFilter === 'PHP' ? '#5a79f3' : '#fff',
+            color: selectedFilter === 'PHP' ? '#fff' : '#181d2b',
+          }}
+        >
+          PHP
+        </button>
       </div>
       <div className="projects-list">
          

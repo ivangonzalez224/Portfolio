@@ -158,6 +158,30 @@
   padding: 0;
 }
 
+.project-credentials {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px dashed #738bee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.project-credentials p {
+  margin: 0;
+  font-size: 12px;
+  color: #738bee;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.project-credentials span {
+  font-size: 13px;
+  color: #fff !important;
+  font-family: monospace; /* Para que parezca código/acceso */
+}
+
 .react-multiple-carousel__arrow {
   z-index: 500;
 }

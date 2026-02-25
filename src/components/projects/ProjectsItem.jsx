@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const ProjectsItem = ({
-  projectImage, projectName, tech1, tech2, tech3, projectDemo, projectSource, projectLive, projectGithub, projectDescription,
+  projectImage, projectName, tech1, tech2, tech3, projectDemo, projectSource, projectLive, projectGithub, projectDescription, backImg
 }) => (
   <div className="project-item">
     {/* Contenido principal que siempre mantiene el tamaño */}
@@ -35,6 +35,12 @@ const ProjectsItem = ({
         >
           {projectSource}
         </button>
+        {backImg && (
+          <div className="project-credentials">
+            <p><strong>Demo Access:</strong></p>
+            <span>{backImg}</span>
+          </div>
+        )}
       </div>
     </div>
   </div>
