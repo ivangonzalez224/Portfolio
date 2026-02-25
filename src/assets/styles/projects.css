@@ -19,19 +19,25 @@
 }
 
 .projects-filter {
-  width: 80%;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  gap: 3%;
-  margin-bottom: 3%;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 .projects-filter button {
   border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: 500;
 }
 
 .projects-filter button:focus {
@@ -195,15 +201,28 @@
 }
 
 @media only screen and (max-width: 765px) {
+  .projects-filter {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 20px;
+    gap: 10px;
+    scrollbar-width: none;
+  }
+
+  .projects-filter::-webkit-scrollbar {
+    display: none;
+  }
+
   .projects-filter button {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 6px 14px;
+    flex-shrink: 0;
   }
 
   .projects-list {
-    width: 97%;
-    display: flex;
-    justify-content: center;
+    width: 95%;
   }
 
   .react-multi-carousel-list li {
