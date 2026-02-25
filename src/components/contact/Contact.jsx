@@ -16,8 +16,8 @@ const Contact = () => {
       <div className="popup-container">
         <div className="popup-content">
           <p>{message}</p>
-          <span>Thank you for making contact</span>
-          <p>I will back to you as soon as possible</p>
+          <span>Thank you for reaching out.</span>
+          <p>Your inquiry has been received. I will review the details and get back to you shortly.</p>
           <button className="popup-close-btn" onClick={onClose}>
             Close
           </button>
@@ -54,8 +54,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="contact-content">
         <div className="contact-left">
-            <span>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat,
-                    contact me directly or fill out the form and I will back to you soon.
+            <span>I&apos;m currently open to new opportunities and technical collaborations. If you have a project in mind or just want to discuss software solutions, feel free to reach out. I&apos;ll review your message and get back to you within 24 hours.
             </span>
             <div className="contact-mobile">
               <div className="mobileEmail">
@@ -93,7 +92,7 @@ const Contact = () => {
               id="message"
               className="contact-input"
               name="message"
-              placeholder="Enter your message here..."
+              placeholder="Tell me about your project or inquiry..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required        
@@ -112,7 +111,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {showPopup && <Popup message="Your message has been sent! ✔️" onClose={() => setShowPopup(false)} />}
+      {showPopup && <Popup message="Message Sent Successfully! ✔️" onClose={() => setShowPopup(false)} />}
     </section>    
   );
 };
